@@ -1,0 +1,11 @@
+1º) O que é o git? Como você definiria o github?
+Através do git, podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.
+O Github é um serviço web que você poderá usar gratuitamente para hospedar seus projetos pessoais. Além disso, quase todos os projetos sobre desenvolvimento estão no github, e você pode acompanhá-los através de novas versões, contribuir informando bugs ou até mesmo enviando código e correções.
+2º) O que você pôde notar de diferente? Comente
+A diferença entre git e github é que o git é só uma ferramenta para versionar projetos, enquanto o github é o site no qual você colocará esses projetos versionados.  Podemos perceber que para mandarmos um arquivo git, nós precisamos do site github, para poder disponibilizar os arquivos.
+3º) Existe um conceito muito importante no github chamado de branch (ramo em
+inglês). Defina branch no âmbito do github. Por que você utilizaria branches ? Para qual branch você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de diferente?
+Branches são separações de código. O branch padrão do projeto é o master. Branches normalmente são utilizados para separar alterações grandes ou novas funcionalidades do projeto. Um exemplo é quando estão fazendo um projeto de blog, os desenvolvedores já fizeram quase toda a parte do blog, mas existem alterações para fazer no sistema de usuários do blog e algumas a fazer no sistema de posts do blog. Para isso, cria se uma branch "usuarios" e uma "posts" (ou algo do tipo) e fazem-se as alterações nessas branches, um time trabalha em cada uma dessas branches, enquanto isso, outro time continua trabalhando em pequenas mudanças ou bugfixes na branch master.
+4º)  Que tipo de informação o git apresenta de forma que te permita saber que há
+diferenças entre branches?
+Branchs são bifurcações ou ramificações dentro de um projeto git. eles servem para que tenhamos diferentes versões baseadas em um mesmo ponto do tempo. são usados para que a equipe se organize, para que um desenvolvedor faça a correção do link em um branch, enquanto outro desenvolvedor continua commitando em outro branch, sem interferirem um no processo do outro.
