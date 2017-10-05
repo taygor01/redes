@@ -1,0 +1,16 @@
+
+Questão 01. Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas.
+
+- Topologias Físicas pode ser representada de várias maneiras. As mais utilizadas e conhecidas são as topologias do tipo estrela, 
+barramento e anel.
+
+A topologia ponto a ponto é a mais simples. Une dois computadores, através de um meio de transmissão qualquer.
+Dela pode-se formar novas topologias, incluindo novos nós em sua estrutura.
+
+Topologia barramento é comum e possui alto poder de expansão. Nela, todos os nós estão conectados a uma barra que é compartilhada entre todos os processadores, podendo o controle ser centralizado ou distribuído. O meio de transmissão usado nesta topologia é o cabo coaxial.
+
+A topologia em anel utiliza em geral ligações ponto-a-ponto que operam em um único sentido de transmissão. O sinal circula no anel até chegar ao destino. Esta topologia é pouco tolerável à falha e possui uma grande limitação quanto a sua expansão pelo aumento de "retardo de transmissão" (intervalo de tempo entre o início e chegada do sinal ao nó destino).
+
+A topologia em estrela utiliza um nó central (comutador ou switch) para chavear e gerenciar a comunicação entre as estações. É esta unidade central que vai determinar a velocidade de transmissão, como também converter sinais transmitidos por protocolos diferentes. Neste tipo de topologia é comum acontecer o overhead localizado, já que uma máquina é acionada por vez, simulando um ponto-a-ponto.
+
+Questão 02. Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
