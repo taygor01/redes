@@ -1,0 +1,14 @@
+Questão 01. ​ O que é o git?​ ​ Como você definiria o github?
+R = Plataforma para hospedagem de código fonte, permite que os usuários contribuam para outros projetos de programação.
+
+Questão 02. ​ O que você pôde notar de diferente? Comente.
+R = Depois de fazer a clonagem, meu repositório aparece na lista do diretório
+
+Questão 03. ​ Existe um conceito muito importante no github chamado de ​ branch (ramo em
+inglês). ​ Defina branch no âmbito do github. Por que você utilizaria ​ branches ​ ? Para qual branch
+você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de
+diferente?
+R = Os branchs são "ramos" usados para divisão de tarefas
+
+Questão 04. ​ Que tipo de informação o git apresenta de forma que te permita saber que há
+diferenças entre branches?
