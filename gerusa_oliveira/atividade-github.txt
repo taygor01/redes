@@ -1,1 +1,30 @@
 atividade 01
+questao 01
+
+Topologia barramentos: Todos os computadores são ligados em um mesmo barramento físico de dados. Apesar de os dados não passarem por dentro de cada um dos nós, apenas uma máquina pode “escrever” no barramento num dado momento. Todas as outras “escutam” e recolhem para si os dados destinados a elas. Quando um computador estiver a transmitir um sinal, toda a rede fica ocupada e se outro computador tentar enviar outro sinal ao mesmo tempo, ocorre uma colisão e é preciso reiniciar a transmissão.
+Vantagens:
+Uso de cabo é econômico;Mídia é barrata, fácil de trabalhar e instalar;Simples e relativamente confiável;Fácil expansão.
+Desvantagens:
+Rede pode ficar extremamente lenta em situações de tráfego pesado;Problemas são difíceis de isolar;Falha no cabo paralisa a rede inteira.
+
+Topologia Estrela: A mais comum atualmente, a topologia em estrela utiliza cabos de par trançado e um concentrador como ponto central da rede. O concentrador se encarrega de retransmitir todos os dados para todas as estações, mas com a vantagem de tornar mais fácil a localização dos problemas, já que se um dos cabos, uma das portas do concentrador ou uma das placas de rede estiver com problemas, apenas o nó ligado ao componente defeituoso ficará fora da rede.
+Vantagens:
+A codificação e adição de novos computadores é simples;Gerenciamento centralizado;Falha de um computador não afeta o restante da rede.
+Desvantagem:
+Uma falha no dispositivo central paralisa a rede inteira.
+
+ Topologia Anel: Os dispositivos são conectados em série, formando um circuito fechado (anel). Os dados são transmitidos unidirecionalmente de nó em nó até atingir o seu destino. Uma mensagem enviada por uma estação passa por outras estações, através das retransmissões, até ser retirada pela estação destino ou pela estação fonte.
+Vantagens:
+Todos os computadores acessam a rede igualmente;Performance não é impactada com o aumento de usuários.
+Desvantagens:
+Falha de um computador pode afetar o restante da rede;Problemas são difíceis de isolar.
+
+Topologia Malha: Esta topologia é muito utilizada em várias configurações, pois facilita a instalação e configuração de dispositivos em redes mais simples. Todos os nós estão atados a todos os outros nós, como se estivessem entrelaçados. Já que são vários os caminhos possíveis por onde a informação pode fluir da origem até o destino.
+Vantagens:
+Maior redundância e confiabilidade;Facilidade de diagnóstico.
+Desvantagem:
+Instalação dispendiosa.
+
+questao 02
+
+
