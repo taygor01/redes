@@ -47,3 +47,5 @@ A camada de aplicativo serve como a janela onde os processos de aplicativos e us
 
 Questão  04
 O conjunto de protocolos TCP/IP é dividido em quatro camadas – aplicação, transporte, internet e rede – sendo cada uma responsável pela execução de tarefas distintas, para a garantir a integridade e entrega dos dados trafegados.
+
+
