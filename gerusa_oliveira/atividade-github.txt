@@ -44,3 +44,6 @@ A camada de rede controla a operação da sub-rede, decidindo que caminho físic
 A camada de sessão permite o estabelecimento da sessão entre processos em execução em estações diferentes. 
 A camada de apresentação formata os dados a serem apresentados na camada de aplicativo. Ela pode ser considerada o tradutor da rede. Essa camada pode converter dados de um formato usado pela camada de aplicativo em um formato comum na estação de envio e, em seguida, converter esse formato comum em um formato conhecido pela camada de aplicativo na estação de recepção.
 A camada de aplicativo serve como a janela onde os processos de aplicativos e usuários podem acessar serviços de rede. 
+
+Questão  04
+O conjunto de protocolos TCP/IP é dividido em quatro camadas – aplicação, transporte, internet e rede – sendo cada uma responsável pela execução de tarefas distintas, para a garantir a integridade e entrega dos dados trafegados.
