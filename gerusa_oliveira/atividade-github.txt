@@ -36,4 +36,11 @@ A intranet ainda possibilita você a utilizar mais protocolos de comunicação, 
 
 A extranet seria uma extensão da intranet. Funciona igualmente como a intranet, porém sua principal característica é a possibilidade de acesso via internet, ou seja, de qualquer lugar do mundo você pode acessar os dados de sua empresa. A idéia de uma extranet é melhorar a comunicação entre os funcionários e parceiros.
 
+Quetão 03
+A camada física, a camada inferior do modelo OSI, está encarregada da transmissão e recepção do fluxo de bits brutos não estruturados através de um meio físico. Ela descreve as interfaces elétricas/ópticas, mecânicas e funcionais com o meio físico e transporta os sinais para todas as camadas superiores. 
+A camada de vínculo de dados proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as camadas acima dela assumam a transmissão praticamente sem erros através do vínculo.
+A camada de rede controla a operação da sub-rede, decidindo que caminho físico os dados devem seguir com base nas condições da rede, na prioridade do serviço e em outros fatores. 
+ A camada de transporte garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito da transferência de dados entre eles e seus pares.
+A camada de sessão permite o estabelecimento da sessão entre processos em execução em estações diferentes. 
+A camada de apresentação formata os dados a serem apresentados na camada de aplicativo. Ela pode ser considerada o tradutor da rede. Essa camada pode converter dados de um formato usado pela camada de aplicativo em um formato comum na estação de envio e, em seguida, converter esse formato comum em um formato conhecido pela camada de aplicativo na estação de recepção.
 
