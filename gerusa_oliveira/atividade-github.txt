@@ -29,5 +29,11 @@ questao 02
  internet:
 A definição de internet é um conglomerado de redes locais espalhadas pelo mundo, o que torna possível e interligação entre os computadores utilizando o protocolo de internet. A internet é uma das melhores formas de pesquisa hoje encontrada, de fácil acesso e capacidade de assimilação do que é buscado.A internet serve como um dos principais meios de comunicação inventados pelo homem. A capacidade de transmitir dados à longa distância faz com que a internet tenha milhões de adeptos diários. Com a internet se pode transmitir texto, fotos, vídeos, fazer ligações por voz ou vídeo com pessoas do outro lado do mundo instantaneamente.
 
+ intranet:
+ As empresas estão cada vez mais necessitando de centralização das informações, métodos de comunicação interna para reduzir custos. A intranet possibilita tudo o que a própria internet dispõe. Porém a principal diferença entre ambas é que a intranet é restrita a um certo público. Há restrição de acesso, por exemplo, por uma empresa, ou seja, todos os colaboradores da empresa podem acessar a intranet com um nome de usuário e senha devidamente especificados pela coordenação da empresa. 
+
+A intranet ainda possibilita você a utilizar mais protocolos de comunicação, não somente o HTTP usado pela internet. Geralmente o acesso a intranet é feito em um servidor local em uma rede local chamada de LAN sigla da língua inglesa que significa Local Area Network (rede de acesso local) instalada na própria empresa.A intranet é um espaço restrito a determinado público utilizado para compartilhamento de informações restritas. Geralmente utilizado em servidores locais instalados na empresa.
+
+A extranet seria uma extensão da intranet. Funciona igualmente como a intranet, porém sua principal característica é a possibilidade de acesso via internet, ou seja, de qualquer lugar do mundo você pode acessar os dados de sua empresa. A idéia de uma extranet é melhorar a comunicação entre os funcionários e parceiros.
 
 
