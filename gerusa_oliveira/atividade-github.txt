@@ -26,5 +26,8 @@ Desvantagem:
 Instalação dispendiosa.
 
 questao 02
+ internet:
+A definição de internet é um conglomerado de redes locais espalhadas pelo mundo, o que torna possível e interligação entre os computadores utilizando o protocolo de internet. A internet é uma das melhores formas de pesquisa hoje encontrada, de fácil acesso e capacidade de assimilação do que é buscado.A internet serve como um dos principais meios de comunicação inventados pelo homem. A capacidade de transmitir dados à longa distância faz com que a internet tenha milhões de adeptos diários. Com a internet se pode transmitir texto, fotos, vídeos, fazer ligações por voz ou vídeo com pessoas do outro lado do mundo instantaneamente.
+
 
 
