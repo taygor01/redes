@@ -1,0 +1,26 @@
+
+I nstituto Federal de Educação, Ciência e Tecnologia da Bahia
+Campus Jequié	                        Aluno: Marcos Bispo
+Curso Técnico de Informática
+Profº. Ramon Fontes
+www.ramonfontes.com
+GITHUB
+
+Questão 01. O que é o git? Como você definiria o github?
+-Git é um sistema de controle de versão de arquivos. Através deles podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas.
+-Definição: É um sistema de controle de versão distribuído e um sistema de gerenciamento de código fonte, com ênfase em velocidade. 
+Questão 02. O que você pôde notar de diferente? Comente.
+-Quando usa o comando cd, volta-se para o inicio.
+-Quando usa o comando pwd, informa o diretório do arquivo.
+Questão 03. Existe um conceito muito importante no github chamado de branch (ramo em inglês). Defina branch no âmbito do github. Por que você utilizaria branches ? Para qual branch
+você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de
+diferente? 
+-Um branch no Git é simplesmente um leve ponteiro móvel para um desses commits. O nome do branch padrão no Git é master. 
+-Utiliza inicialmente para fazer commits, você tem um branch principal.
+-O meu arquivo foi enviado para o branch 2017-s 421.
+-Para enviar para o branch diferente teria que selecionar o branch que seria enviado o arquivo.
+Questão 04. Que tipo de informação o git apresenta de forma que te permita saber que há
+diferenças entre branches?
+-Quando não aparece a mensagem: Capaz de fundir. Esses ramos podem ser mesclados automaticamente.
+
+ 
