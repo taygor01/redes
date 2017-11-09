@@ -1,0 +1,12 @@
+Questão 1. O git consiste em uma plataforma de compartilhamento de código, permitindo que outros usuários possam contribuir com alterações nos códigos compartilhados.
+
+Questão 2: Uma pasta com o nome do repositório criado no github foi criada no computador. 
+
+Questão 3: O branch é um recurso utilizado em projetos que contém muitas ramificações permitindo que se possa observar as alterações efetuadas em cada ramificação. 
+
+Questão 4: O git compara os conteúdos dos arquivos de cada branch evitando as repetições e mostrando apenas o que mudou em relação ao arquivo original.
+
+nota: =)
+
+
+
