@@ -1,0 +1,16 @@
+Questão 01 - O que e o git? Como você definiria o github?
+
+Resposta - E um sistema de controle de versão de arquivos .Atravez dele podem,os desenvolver projetos na qual diversaspessoas podemcontribuir simultaneamenteno, editando e criando novos arquivos e permitindo que os mesmos possam existir sem risco de suas alterações serem sobrescritas.outra virtede do git e a possibilidade de criar, a qualquermomento,varios snapshots do seu projeto,ou popular “ nerdmenete”; E um programa que pode sewr instalado “neste link” para Windows,tanbém para o Mac,ou atravez do comando sudo apt – get install gitpara plataforma do Linux.
+Nada mais e do que um servidor web que oferece diversas funcionalidades extra aplicadas ao git,onde podemos usar gratuitamente o github para hospedar seus projetos pessoais.Além disso, quase todos os projetos /framework/biblioteca sobre desenvolvimento open souece estão no github,e você pode acompanha-los através de novas versões, contribuir informando bugs ate mesmo enviandocodgo e correcões.
+
+Quetão 02 – O que se pode notar de diferente ? Comente.
+
+Resposta – não muito diferente os seus comando parecidos com o MS DOS ,facilidade e no gerenciamento do git,como qualquer outro sistemas com seus editores seja numerioco ou de texta ,com menos feranetas ,mais ferramentas importante que não deixa a desejar , algo também que achei interressante e que o seu repositorio está puúblicoternando assim o acesso a qualquer pessoas podendo ate clonar mais nunca alterar se quer que o usuario queira.
+
+Questão 03 – existe um conceito muito importante no github chamado de branch(ramoem engles).defina branch no âmbito do gith.Porque você utilizaria o branch? Para qual branch você enviou seu arquivo? E se quisesse enviar para novo branch, o que você faria diferente?
+
+resposta – Branch nada mais e do que um braço do projeto em enghes que segnifica “ramo” e importante destacar que no nome branch sempre deve ter seu login de rede mais o numero da atividade,deixando claro o que ela faz . O git não armazena dados como uma série de mudanças ou deltas,mais sim como uma série de snapshots.quando se faz um commit no get, o git grarda um objeto commit que contém um ponteiro para o snapshot do conteudo que vovê colocouna área de seleção, o aoutor eos metadados da mensagem,zero ou mais ponteiros para o commit ou commits que são pais desde commit: nemhum pai para o commit inicial,um pai para um commit normale multiplos pais para commit que resultem de um merge de dois ou mais branches.
+
+Quetão 04 O que tipo de informação o git apresenta de forma que lhe permite saber que a definição entre braches?
+
+Resposta – O git e apenas uma ferramenta para versionar projetos e o github e um site no qual você colocará esses projetos versionados uma anologia valida seria que o git é seu pincel e tintas enquanto o github é um museu.Git permite que você escolha commits especificos ou uma série de commits,obviamente você pode ser referir a um commit pelo hash SHA-1 que e dado, mas geralmente ,entre oito e dez caracteres são mais que sufuciientes. O branch é autorizada por qualquer motivo, git guarda essas informacões.
