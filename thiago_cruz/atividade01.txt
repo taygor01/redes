@@ -1,0 +1,46 @@
+QUESTÃO 1
+Ponto a Ponto
+A topologia ponto a ponto é a mais simples. Une dois computadores, através de um meio de transmissão qualquer. Dela pode-se formar novas topologias, incluindo novos nós em sua estrutura.
+Barramento
+Esta topologia é bem comum e possui alto poder de expansão. Nela, todos os nós estão conectados a uma barra que é compartilhada entre todos os processadores, podendo o controle ser centralizado ou distribuído. O meio de transmissão usado nesta topologia é o cabo coaxial.
+Anel
+A topologia em anel utiliza em geral ligações ponto-a-ponto que operam em um único sentido de transmissão. O sinal circula no anel até chegar ao destino. Esta topologia é pouco tolerável à falha e possui uma grande limitação quanto a sua expansão pelo aumento de "retardo de transmissão" (intervalo de tempo entre o início e chegada do sinal ao nó destino).
+Estrela
+A topologia em estrela utiliza um nó central (comutador ou switch) para chavear e gerenciar a comunicação entre as estações. É esta unidade central que vai determinar a velocidade de transmissão, como também converter sinais transmitidos por protocolos diferentes. Neste tipo de topologia é comum acontecer o overhead localizado, já que uma máquina é acionada por vez, simulando um ponto-a-ponto.
+QUESTÃO 2
+Internet
+é um conglomerado de redes locais espalhadas pelo mundo, o que torna possível e interligação entre os computadores utilizando o protocolo de internet. A internet é uma das melhores formas de pesquisa hoje encontrada, de fácil acesso e capacidade de assimilação do que é buscado.
+Intranet
+é um espaço restrito a determinado público utilizado para compartilhamento de informações restritas. Geralmente utilizado em servidores locais instalados na empresa.
+Extranet
+A extranet seria uma extensão da intranet. Funciona igualmente como a intranet, porém sua principal característica é a possibilidade de acesso via internet, ou seja, de qualquer lugar do mundo você pode acessar os dados de sua empresa. A idéia de uma extranet é melhorar a comunicação entre os funcionários e parceiros além de acumular uma base de conhecimento que possa ajudar os funcionários a criar novas soluções.
+Questão 3
+CAMADA FÍSICA
+está encarregada da transmissão e recepção do fluxo de bits brutos não estruturados através de um meio físico.
+CAMADA DE VÍNCULO DE DADOS
+proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as camadas acima dela assumam a transmissão praticamente sem erros através do vínculo.
+CAMADA DE REDE
+A camada de rede controla a operação da sub-rede, decidindo que caminho físico os dados devem seguir com base nas condições da rede, na prioridade do serviço e em outros fatores.
+CAMADA DE TRANSPORTE
+A camada de transporte garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito da transferência de dados entre eles e seus pares.
+CAMADA DE SESSÃO
+A camada de sessão permite o estabelecimento da sessão entre processos em execução em estações diferentes.
+CAMADA DE APRESENTAÇÃO
+A camada de apresentação formata os dados a serem apresentados na camada de aplicativo. Ela pode ser considerada o tradutor da rede. Essa camada pode converter dados de um formato usado pela camada de aplicativo em um formato comum na estação de envio.
+CAMADA DE APLICATIVO
+A camada de aplicativo serve como a janela onde os processos de aplicativos e usuários podem acessar serviços de rede.
+
+Questão 4
+Camada de Aplicação – Esta camada faz a comunicação entre os aplicativos e o protocolo de transporte.
+Camada de Transporte – Esta camada é responsável por captar os dados enviados pela camada de aplicação e transformá-los em pacotes, a serem repassados para a camada de Internet.
+Camada de Internet – Há vários protocolos que podem operar nesta camada: IP (Internet Protocol), ICMP (Internet Control Message Protocol), ARP (Address Resolution Protocol) e RARP (Reverse Address Resolution Protocol).
+Camada de Interface com a Rede – Esta camada é responsável por enviar o datagrama recebido pela camada de Internet em forma de um quadro através da rede.
+Tem como principal função, a interface do modelo TCP/IP com os diversos tipos de redes (X.25, ATM, FDDI, Ethernet, Token Ring, Frame Relay, etc.) e transmitir os datagramas pelo meio físico, tem a função de encontrar o caminho mais curto e confiável.
+Questão 5
+Hub
+o Hub funciona como a peça central, que recebe os sinais transmitidos pelas estações e os retransmite para todas as demais. Todas as placas são ligadas ao hub ou switch, que serve como uma central, de onde os sinais de um micro são retransmitidos para os demais. 
+Switch
+São equipamentos utilizados basicamente para a conexão e filtrgem de informações entre duas ou mais estações de trabalho em rede de computadores. Além de conectar estações de trabalho, o switch pode corrigir erros de alguns pacotes de dados e coordenar o tráfego de informações na rede. Impedindo por exemplo congestionamentos ou colisão de arquivos já que ele separa cada estação conectada  em um diferente segmento de rede (em diferente cabo). Sendo assim o switch pode enviar com precisão e agilidade as informações desejadas aos locais desejados.
+Roteador 
+Um roteador é um elemento intermediário em uma rede de computadores que permitem o roteamento de pacotes entre redes separadas. Este roteamento é realizado de acordo com um conjunto de regras que formam a tabela de roteamento. 
+É um equipamento de camada 3 em relação ao modelo OSI.
