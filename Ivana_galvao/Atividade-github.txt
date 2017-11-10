@@ -1,0 +1,19 @@
+ 1 Atividade 
+
+          Questão 1
+Git é um sistema de controle de versão de arquivos, onde atraves deles podemos desenvolver projetos na qual diversas pessoas podem contribuir simultaneamente no mesmo, editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas. 
+O GitHub é uma espécie de rede social para desenvolvedores e programadores, ele possui diversas funcionalidades, como feeds, followers (que seriam seus amigos), wiki e um gráfico que mostra como os desenvolvedores estão contribuindo trabalhando nas versões de seus repositórios. Este serviço web oferece diversas funcionalidades extras aplicadas ao Git, de forma gratuita, mas também existem planos comerciais para projetos de código privados.
+
+        Questão 2
+ Permite a criação de inúmeros repositórios públicos gratuitamente e repositórios privados em planos pagos,ferramentas de revisão de código,suporte a Wiki,rastreamento de erros, Branchs privadas e Sistema de CI/CD. Ajudando na criacao de seus projetos de maneira rapida e facil .
+
+       Questão 3 
+Quando você faz um commit no Git, o Git guarda um objeto commit que contém um ponteiro para o snapshot do conteúdo que você colocou na área de seleção, o autor e os metadados da mensagem, zero ou mais ponteiros para o commit ou commits que são pais deste commit: nenhum pai para o commit inicial, um pai para um commit normal e múltiplos pais para commits que resultem de um merge de dois ou mais branches. Um branch no Git é simplesmente um leve ponteiro móvel para um desses commits. O nome do branch padrão no Git é master. Como você inicialmente fez commits, você tem um branch principal (master branch) que aponta para o último commit que você fez. Cada vez que você faz um commit ele avança automaticamente. O que acontece se você criar um novo branch? Bem, isso cria um novo ponteiro para que você possa se mover. Vamos dizer que você crie um novo branch chamado testing. Você faz isso com o comando git branch:
+$ git branch testing
+Isso cria um novo ponteiro para o mesmo commit em que você está no momento. Como o Git sabe o branch em que você está atualmente? Ele mantém um ponteiro especial chamado HEAD. Observe que isso é muito diferente do conceito de HEAD em outros VCSs que você possa ter usado, como Subversion e CVS. No Git, este é um ponteiro para o branch local em que você está no momento. Neste caso, você ainda está no master. O comando git branch só criou um novo branch — ele não mudou para esse branch.
+
+        Questão 4 
+O branch tradicional deve ser algo experimental, algo em paralelo, algo que potencialmente será incorporado ao desenvolvimento principal, ao branch principal , o branch é um caminho, um galho de desenvolvimento. Se trabalha no desenvolvimento sempre em cima de branches através dos commits. É nele que se faz o merge do estado anterior com o que foi desenvolvido agora. O branch vai recebendo evoluções do desenvolvimento. É incentivado que se faça um novo branch, sempre que possível, quando vai iniciar uma nova linha de desenvolvimento. 
+Branch também é um ponteiro para um nó mas, diferente da tag, a branch pode gerar uma ramificação dentro deste grafo. 
+
+
