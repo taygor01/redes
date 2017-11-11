@@ -21,7 +21,6 @@ Resp. 182.145.96.1
  203.1.1.0/24       2^x-2.= 25
  6 subredes           x=5
  25 host              x⁵=32
- 
  Variação= 256-224=32
  
      Questão 4
@@ -31,15 +30,51 @@ Resp. 182.145.96.1
    d)0 a 31       #2 Não
    e)Sim          0 a 1
      
-       Questão 5
+    Questão 5
+       a)1001.11.10011110.1
+       b)1100100.1000.101.100
+       c)10001111.110110.1000.1011
+       d)11001010.11111000.11.1
+       e)11010110.1000.1.1000
+       f)11011001.101.100.11
        
        
-         Questão 6
-   a)Classe A
-   b)Classe A
-   c)Classe B
-   d)Classe C
-   e)Classe C
-   f)Classe C
+   Questão 6
+     a)Classe A
+     b)Classe A
+     c)Classe B
+      d)Classe C
+     e)Classe C
+     f)Classe C
+   
+   Questão 7 
+    10.100.100.0/24
+     2^n>= 30
+     n=5
+     5 zeros na mascara
+     Nova mascara 24+3=27
+     a)6 subredes
+     b)30 host
+    c)2^n=8
+    d)10.100.100.0
+    e)190
+    f)31,63,95,127,189,191
+   
+   Questão 8
+   172.18.70.23/18
+   256-192=64
+   Rede= 172.18.64.0
+   Broadcsrt=172.18.127.255
+   Mascara=18
+   
+   
+   Questão 9
+    200.170.150.97/27
+    Broadcast= 95
+    Rede= 96
+    Mascara=27
+   
+   
+   
  
       
