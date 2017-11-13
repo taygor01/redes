@@ -1,0 +1,75 @@
+atividade 01
+questao 01
+
+Topologia barramentos: Todos os computadores são ligados em um mesmo barramento físico de dados. Apesar de os dados não passarem por dentro de cada um dos nós, apenas uma máquina pode “escrever” no barramento num dado momento. Todas as outras “escutam” e recolhem para si os dados destinados a elas. Quando um computador estiver a transmitir um sinal, toda a rede fica ocupada e se outro computador tentar enviar outro sinal ao mesmo tempo, ocorre uma colisão e é preciso reiniciar a transmissão.
+Vantagens:
+Uso de cabo é econômico;Mídia é barrata, fácil de trabalhar e instalar;Simples e relativamente confiável;Fácil expansão.
+Desvantagens:
+Rede pode ficar extremamente lenta em situações de tráfego pesado;Problemas são difíceis de isolar;Falha no cabo paralisa a rede inteira.
+
+Topologia Estrela: A mais comum atualmente, a topologia em estrela utiliza cabos de par trançado e um concentrador como ponto central da rede. O concentrador se encarrega de retransmitir todos os dados para todas as estações, mas com a vantagem de tornar mais fácil a localização dos problemas, já que se um dos cabos, uma das portas do concentrador ou uma das placas de rede estiver com problemas, apenas o nó ligado ao componente defeituoso ficará fora da rede.
+Vantagens:
+A codificação e adição de novos computadores é simples;Gerenciamento centralizado;Falha de um computador não afeta o restante da rede.
+Desvantagem:
+Uma falha no dispositivo central paralisa a rede inteira.
+
+ Topologia Anel: Os dispositivos são conectados em série, formando um circuito fechado (anel). Os dados são transmitidos unidirecionalmente de nó em nó até atingir o seu destino. Uma mensagem enviada por uma estação passa por outras estações, através das retransmissões, até ser retirada pela estação destino ou pela estação fonte.
+Vantagens:
+Todos os computadores acessam a rede igualmente;Performance não é impactada com o aumento de usuários.
+Desvantagens:
+Falha de um computador pode afetar o restante da rede;Problemas são difíceis de isolar.
+
+Topologia Malha: Esta topologia é muito utilizada em várias configurações, pois facilita a instalação e configuração de dispositivos em redes mais simples. Todos os nós estão atados a todos os outros nós, como se estivessem entrelaçados. Já que são vários os caminhos possíveis por onde a informação pode fluir da origem até o destino.
+Vantagens:
+Maior redundância e confiabilidade;Facilidade de diagnóstico.
+Desvantagem:
+Instalação dispendiosa.
+
+
+questao 02
+ internet:
+A definição de internet é um conglomerado de redes locais espalhadas pelo mundo, o que torna possível e interligação entre os computadores utilizando o protocolo de internet. A internet é uma das melhores formas de pesquisa hoje encontrada, de fácil acesso e capacidade de assimilação do que é buscado.A internet serve como um dos principais meios de comunicação inventados pelo homem. A capacidade de transmitir dados à longa distância faz com que a internet tenha milhões de adeptos diários. Com a internet se pode transmitir texto, fotos, vídeos, fazer ligações por voz ou vídeo com pessoas do outro lado do mundo instantaneamente.
+
+ intranet:
+ As empresas estão cada vez mais necessitando de centralização das informações, métodos de comunicação interna para reduzir custos. A intranet possibilita tudo o que a própria internet dispõe. Porém a principal diferença entre ambas é que a intranet é restrita a um certo público. Há restrição de acesso, por exemplo, por uma empresa, ou seja, todos os colaboradores da empresa podem acessar a intranet com um nome de usuário e senha devidamente especificados pela coordenação da empresa. 
+
+A intranet ainda possibilita você a utilizar mais protocolos de comunicação, não somente o HTTP usado pela internet. Geralmente o acesso a intranet é feito em um servidor local em uma rede local chamada de LAN sigla da língua inglesa que significa Local Area Network (rede de acesso local) instalada na própria empresa.A intranet é um espaço restrito a determinado público utilizado para compartilhamento de informações restritas. Geralmente utilizado em servidores locais instalados na empresa.
+
+A extranet seria uma extensão da intranet. Funciona igualmente como a intranet, porém sua principal característica é a possibilidade de acesso via internet, ou seja, de qualquer lugar do mundo você pode acessar os dados de sua empresa. A idéia de uma extranet é melhorar a comunicação entre os funcionários e parceiros.
+
+
+Quetão 03
+A camada física, a camada inferior do modelo OSI, está encarregada da transmissão e recepção do fluxo de bits brutos não estruturados através de um meio físico. Ela descreve as interfaces elétricas/ópticas, mecânicas e funcionais com o meio físico e transporta os sinais para todas as camadas superiores. 
+A camada de vínculo de dados proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as camadas acima dela assumam a transmissão praticamente sem erros através do vínculo.
+A camada de rede controla a operação da sub-rede, decidindo que caminho físico os dados devem seguir com base nas condições da rede, na prioridade do serviço e em outros fatores. 
+ A camada de transporte garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito da transferência de dados entre eles e seus pares.
+A camada de sessão permite o estabelecimento da sessão entre processos em execução em estações diferentes. 
+A camada de apresentação formata os dados a serem apresentados na camada de aplicativo. Ela pode ser considerada o tradutor da rede. Essa camada pode converter dados de um formato usado pela camada de aplicativo em um formato comum na estação de envio e, em seguida, converter esse formato comum em um formato conhecido pela camada de aplicativo na estação de recepção.
+A camada de aplicativo serve como a janela onde os processos de aplicativos e usuários podem acessar serviços de rede. 
+
+
+Questão  04
+O conjunto de protocolos TCP/IP é dividido em quatro camadas – aplicação, transporte, internet e rede – sendo cada uma responsável pela execução de tarefas distintas, para a garantir a integridade e entrega dos dados trafegados.
+Camada de aplicação:
+Esta camada faz a comunicação entre os programas e os protocolos de transporte no TCP/IP.
+Camada de transporte:
+Esta camada é responsável por receber os dados enviados pela camada de aplicação e transformá-los em pacotes menores, a serem repassados para a camada de internet. Ela garante que os dados chegarão sem erros e na sequência correta.
+Camada de internet:
+Ela é responsável pelo endereçamento e roteamento do pacote, fazendo a conexão entre as redes locais. Adiciona ao pacote o endereço IP de origem e o de destino, para que ele saiba qual o caminho deve percorrer.
+Camada de interface com a rede:
+Essa camada é responsável pelo envio do datagrama recebido da camada de internet em forma de quadros através da rede física.
+O Ethernet é o protocolo mais utilizado e possui três componentes principais:Media Access Control (MAC);Media Access Control (MAC);Physical.
+
+
+Questao 05
+Hub:
+O hub é um dispositivo que tem a função de interligar os computadores de uma rede local. Sua forma de trabalho é a mais simples se comparado ao switch e ao roteador: o hub recebe dados vindos de um computador e os transmite às outras máquinas.
+Switch:
+O switch é um aparelho muito semelhante ao hub, mas tem uma grande diferença: os dados vindos do computador de origem somente são repassados ao computador de destino. 
+Roteador:
+O roteador (ou router) é um equipamento utilizado em redes de maior porte. Ele é mais "inteligente" que o switch, pois além de poder fazer a mesma função deste, também tem a capacidade de escolher a melhor rota que um determinado pacote de dados deve seguir para chegar em seu destino. 
+No contexto do modelo OSI: os Hubs atuam na camada física, Sua PDU(Protocolo de Unidade de Dados)) são os BITS.
+A camada e enlace trata as topologias de rede, dispositivos como Switche, placa de rede, interfaces, etc., e é responsável por todo o processo de switching. Após o recebimento dos bits,  ela os converte de maneira inteligível, os transforma em unidade de dado, subtrai o endereço físico e encaminha para a camada de rede que continua o processo. Sua PDU é o QUADRO.
+Camada de Rede:
+Pensando em WAN, é a camada que mais atua no processo. A camada 3 é responsável pelo tráfego no processo de internetworking. A partir de dispositivos como roteadores, ela decide qual o melhor caminho para os dados no processo, bem como estabelecimento das rotas. A camada 3 já entende o endereço físico, que o converte para endereço lógico (o endereço IP).A PDU da camada 3 é o PACOTE.
+
