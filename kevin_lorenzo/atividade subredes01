@@ -381,5 +381,72 @@ broad
 207.209.68.223
 207.209.68.255
 
+c) var: 256 – 240 = 16 
+131.107.0.0/20
+
+ip subrede
+131.107.0.0
+ip 1º host
+131.107.0.1
+ip ultimo host 
+131.107.15.254
+broad
+131.107.15.255
+numero de subredes
+2^4 = 16
+numero de hosts
+2^12 – 2 = 4094
+
+d) var: 256 – 248 = 8
+ 10.0.0.0/13
+ip subrede 
+10.0.0.0
+ip 1º host
+10.0.0.1
+ip ultimo host
+10.7.255.254
+broad
+10.7.255.255
+numero de subredes
+2^5 = 32
+numero de hosts 
+2^10 – 2 = 524286
+
+			
+questão 19
+rede: 201.43.127.x
+5 subredes
+5 hosts 
+Classe c
+2^x >= 5
+x>=3
+Mascara de subrede: 255.255.255.224
+Var: 256 – 224 = 32
+
+Id subrede: 201.43.127.0
+range: 201.43.127.1 ate 201.43.127.30
+broad: 201.43.127.31
+numero de hosts: 2^5-2= 30
+
+Id subrede: 201.43.127.32
+range: 201.43.127.33 ate 201.43.127.62
+broad: 201.43.127.63
+numero de hosts: 2^5-2= 30
+
+Id de subrede: 201.43.127.64
+range: 201.43.127.65 ate 201.43.127.126
+broad: 201.43.127.127
+numero de hosts: 2^5-2=30
+
+Id de subrede: 201.43.127.128
+range: 201.43.127.129 ate 201.43.127.190
+broad: 201.43.127.191
+numero de hosts: 2^5-2=30
+
+Id de subrede: 201.43.127.192
+range: 201.43.127.192 ate 201.43.127.254
+broad: 201.43.127.255
+numero de hosts: 2^5-2=30
+
 			
 
