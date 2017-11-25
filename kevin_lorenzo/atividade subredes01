@@ -1,0 +1,452 @@
+Questão 01) Admita que você tenha recebido o bloco de rede 202.135.15.0/24. Obs. a notação 24
+significa que 24 bits endereçam rede, ou seja, 3 octetos (3x8=24). Desta forma a máscara é
+255.255.255.0:
+a) Qual o número máximo de subredes que podem ser definidas?
+2º = 1
+b) Liste a faixa de endereços de host que pode designada para a subrede 202.135.15.192/27. Qual o
+endereço de broadcast para a subrede 202.135.15.192/27?
+broadcast : 202.135.15.223/27
+variação: 256 - 224 = 32
+0 - 32 - 64 - 96 - 128 - 160 - 192 - 224 
+
+Questão 02) Admita que você tenha recebido o bloco de rede 182.145.0.0/16. Você precisa
+configurar 8 subredes.
+a) Liste a faixa de endereços de host que pode ser atribuída para a subrede 182.145.96.0/19.
+2^x >= 8
+x = 3
+182.145.96.0/19
+faixa host - 182.145.96.1
+variação : 256 - 224 = 32
+96/32 = 3
+
+b) Qual o endereço de broadcast para a subrede 182.145.96.0/19.
+182.145.96.1 ¬-> 182.145.127.254
+
+Questão 03) Uma organização obteve o número de rede 213.1.1.0/24 e ela precisa definir 6
+subredes. A maior subrede precisa suportar 25 hosts. Identifique todos os endereços de Broadcast.
+213.1.1.0/24
+6 subredes
+25 hosts
+2^x - 2 >= 25
+x = 5 
+variação: 
+256 - 224 = 32
+212.1.1.0
+212.1.1.32 - 64 - 96 - 128 - 160 - 192 - 224
+Questão 04) Para cada alínea verifique se os endereços IP estão ou não na mesma subrede:
+a) Endereço IP1: 192.168.1.116/26
+Endereço IP2: 192.168.1.124 /26
+Endereço IP1: 192.168.1.116/26
+11000000.10101000.00000001.01110100
+var : 256 - 192 = 64
+11000000 = 192
+Endereço IP2: 192.168.1.124 /26
+11000000.10101000.00000001.01111100
+var : 256-192 = 64
+11000000 = 192
+0 - 64 - 128 - 256
+esta na mesma subrede - 64 endereço de subrede de cada uma delas.
+128	64	32	16	8	4	2	1
+
+b) Endereço IP1: 192.168.0.180/27
+Endereço IP2: 192.168.0.192/27
+IP1: 192.168.0.180/27
+11000000.10101000.00000000.10110100/27
+256 - 224 = 32
+11100000 = 224
+Endereço IP2: 192.168.0.192/27
+11000000.10101000.00000000.11000000/27
+256 - 224 = 32
+1110000 = 224
+0 - 32 - 64 - 96 - 128 - 160 - 192 - 224
+nao estao na mesma subrede IP1 = 160, IP2 = 192
+128	64	32	16	8	4	2	1
+
+c) Endereço IP1: 172.16.100.234
+Endereço IP2: 172.16.98.234
+Máscara de subrede: 255.255.240.0
+Endereço IP1:172.16.100.234/16
+10101100.00010000.01100100.11101010
+256 - 0 = 256
+Endereço IP2: 172.16.98.234/16
+10101100.00010000.01100010.11101010
+Máscara de subrede: 255.255.240.0
+SAO IGUAIS IP1 = 100, IP2= 98 ESTAO 
+0 - 256 - 512
+estao na mesma subrede
+128	64	32	16	8	4	2	1
+
+d) Endereço IP1: 192.168.10.31/27
+Endereço IP2: 192.168.10.32/27
+Endereço IP1: 192.168.10.31/27
+11000000.10101000.00001010.
+11100000 = 224
+256 - 224 = 32	
+Endereço IP2: 192.168.10.32/27
+11100000 = 224	
+256 - 224 = 32
+0 - 32 - 64
+nao sao da mesma subrede ip1 = 31, ip2 = 32
+
+e) Endereço IP1: 10.0.0.1/23
+Endereço IP2: 10.0.1.1/23
+Endereço IP1: 10.0.0.1/23
+11111110 = 254
+256- 254 = 2
+Endereço IP2: 10.0.1.1/23
+0 - 2  - 4
+sao da mesma subrede ip1, ip2 estao no 0
+128	64	32	16	8	4	2	1
+
+f) Endereço IP1: 10.10.8.100/21
+Endereço IP2: 10.10.7.100/21
+EndereçoIP1: 10.10.8.100/21
+11111000 = 248
+256 - 248 = 8
+Endereço ip2: 10.10.7.100/21
+11111000 = 248
+256 - 248 = 8
+0 - 8 - 16 - 24
+nao sao da mesma subrede  IP1 = 8, IP2 = 7
+
+Questão 05) Transforme os endereços decimais em binários.
+128	64	32	16	8	4	2	1
+
+a)9.3.158.1 = 00001001.00000011.10011110.00000001
+b)100.8.5.4 = 01100100.00001000.00000101.00000100
+c)143.54.8.11 = 10001111.00110110.00001000.00001011
+d)200.248.3.1 = 11001000.11111000.00000011.00000001
+e)214.8.1.8 = 11010110.00001000.00000001.00001000
+f)217.5.4.3=11011001.00000101.00000100.00000011
+
+Questão 06) Com base no exercício 5, defina a qual classe esses endereços pertencem?
+a)a
+b)a
+c)b
+d)c
+e)c
+f)c
+
+Questão 07) Uma empresa de porte médio tem a matriz na Bahia e mais cinco filiais em outras
+cidades do Brasil. Agora imagine que em nenhuma das localidades a rede tem mais do que 30
+computadores. O endereço fornecido 10.100.100.0/24, para evitar desperdício de endereços e com
+as informações acima, identifique os seguintes itens:
+sub: bahia + 5 subredes
+host: 30hosts
+hosts = é a quantidade de zeros
+2^n - 2 >=30
+n = 5
+nova mascara: /27
+a) Quantidade de subredes ?
+r: 6
+b) Quantidade de hosts ?
+r: 30
+c) Endereço de cada subrede ?
+r: 2^n = 8 		var: 256 - 224 = 32
+d) Endereço da primeira máquina de cada subrede ?
+r: .1/.33/ .65/ . 97/ .129/ .161
+e) Endereço da última máquina de cada subrede ?
+r: .30/ .62/ .94/ .126/.158/.190
+f) Endereço de broadcast de cada subrede?
+r: .31/ .63/ .95/ .127/ .159/ .191
+Questão 08) Seja o endereço IP de um host de uma determinada rede 172.18.70.23 com máscara
+255.255.192.0, qual é o IP de base de rede e de broadcast pertencente a subrede deste host?
+128	64	32	16	8	4	2	1
+255.255.192.0 -> 11111111.11111111.11000000.00000000
+172.18.70.23
+8  + 8 + 2 = /18
+var: 256 - 192 = 64
+rede: 172.18.64.0 (todos os de rede finais sao 0)
+broad: 172.18.127.255
+0 - 64 - 128 
+Questão 09) O gateway de sua rede tem o endereço 200.170.150.97 com máscara 255.255.255.224.
+Determine a rede, o broadcast e quais IPs válidos você dispõe para endereçar os hosts de sua rede.
+ip: 170.150.97/27
+mascara: 255.255.255.224(transforma em binario)
+
+255.255.255.224 ->11111111.11111111.11111111.11100000
+			8	+	8	+8	+3 = /27
+var: 256 - 224= 32
+0 	- 32	-64
+rede: 200.170.150.96
+broad: 200.170.150.127
+host: 200.170.150.97 -> 200.170.150.127
+Questão 10) Dado o IP 11.11.11.11 com a máscara /22 (que é 11+11) escolha dentre as alternativas
+abaixo quais são IPs válidos pertencentes à mesma subrede (escolha duas alternativas):
+a. 11.11.11.0
+b. 11.11.10.255
+c. 11.11.7.1
+d. 11.12.0.1
+e. 11.11.11.255
+
+11.11.11.11/22 = 255.255.252.0
+var: 256-252: 4
+rede: 11.11.8.0
+broad: 11.11.11.255(5)
+0 	-	4	-	8	-	12	-	16
+
+11.11.11.0
+11.11.10.255
+questao 11
+192.168.10.x/24
+A) hosts
+192.168.10.1
+192.168.10.2
+192.168.10.3
+192.168.10.4
+192.168.10.5
+B)192.168.10.0
+c)192.168.10.255
+d)192.168.10.1 até 192.168.10.254
+e) 2^n - 2 = 2^8 - 2 = 256 - 2  = 254 numero de hosts
+questao 12
+200.143.165.x 	- 2 subredes
+a)255.255.255.128
+b)2^7 - 2 = 128 - 2 = 126 numero de hosts
+c) i - 200.143.165.0 / 200.143.165.128
+ii - 200.143.165.127 / 200.143.165.255
+iii - 200.143.165.1 até 200.143.165.126 / De   200.143.165.129 ate 200.143.165.254
+
+questao 13
+192.108.10.x
+8 subredes	2^x >= 8
+x = 3
+24 + 3 = /27
+a) 255.255.255.224
+b)2^5 - 2 = 32 - 2 = 30 numero maximo de hosts
+c) id de rede
+i - 192.108.10.0
+192.108.10.32
+192.108.10.64
+192.108.10.96
+192.108.10.128
+192.108.10.160
+192.108.10.192
+192.108.10.224
+ii - 192.108.10.31
+192.108.10.63
+192.108.10.95
+192.108.10.127
+192.108.10.159
+192.108.10.191
+192.108.10.223
+192.108.10.255
+iii - 192.108.10.1  ate 192.108.10.30
+192.108.10.33 ate 192.108.10.62
+192.108.10.65 ate 192.108.10.94
+192.108.10.97 ate 192.108.10.126
+192.108.10.129 ate 192.108.10.158
+192.108.10.161 ate 192.108.10.190
+192.108.10.193 ate 192.108.10.222
+192.108.10.225 ate 192.108.10.255
+
+questao 14 
+210.21.1.x
+16 subredes
+2^x >= 16
+x=4
+24 + 4 = /28
+a) 255.255.255.240
+b) 2^4 - 2 = 16 - 2 = 14 numero de hosts
+c) i - id de rede
+210.21.1.0
+210.21.1.16
+210.21.1.32
+210.21.1.48
+210.21.1.64
+210.21.1.80
+210.21.1.96
+210.21.1.112
+210.21.1.128
+210.21.1.144
+210.21.1.160
+210.21.1.176
+210.21.1.192
+210.21.1.208
+210.21.1.224
+210.21.1.240
+ii - broad
+210.21.1.15
+210.21.1.31
+210.21.1.47
+210.21.1.63
+210.21.1.79
+210.21.1.95
+210.21.1.111
+210.21.1.127
+210.21.1.143
+210.21.1.159
+210.21.1.175
+210.21.1.191
+210.21.1.207
+210.21.1.223
+210.21.1.239
+210.21.1.255
+
+ii - ranges ip
+210.21.1.1 ate 210.21.1.14
+210.21.1.17 ate 210.21.1.30
+210.21.1.33 ate 210.21.1.46
+210.21.1.49 ate 210.21.1.62
+210.21.1.65 ate 210.21.1.78
+210.21.1.81 ate 210.21.1.94
+210.21.1.97 ate 210.21.1.110
+210.21.1.113 ate 210.21.1.126
+210.21.1.129 ate 210.21.1.142
+210.21.1.145 ate 210.21.1.158
+210.21.1.161 ate 210.21.1.174
+210.21.1.177 ate 210.21.1.190
+210.21.1.193 ate 210.21.1.206
+210.21.1.209 ate 210.21.1.222
+210.21.1.225 ate 210.21.1.238
+210.21.1.241 ate 210.21.1.254
+
+questao 15
+147.20.10.255 - 255.255.252.0
+a) 2^2 - 2 = 4 - 2 = 2
+b) 256/4 = 64 subredes
+c) broadcast
+d) 147.20.10.252
+
+Questão 18
+A)192.168.10.0/26
+255.255.255.192
+256-192 = 64 variação
+256/64 = 4 Subredes
+2^6-2 = 64-2 =  62 Hosts para cada subredes
+
+*Endereço IP da subrede
+192.168.10.0
+192.168.10.64
+192.168.10.128
+192.168.10.192
+
+*IP do primeiro Host
+192.168.10.1
+192.168.10.65
+192.168.10.129
+192.168.10.193
+
+*IP do último Host
+192.168.10.62
+192.168.10.126
+192.168.10.190
+192.168.10.254
+
+*Endereços do Broadcast
+192.168.10.63
+192.168.10.127
+192.168.10.191
+192.168.10.255
+
+b) 207.209.68.0/27
+255.255.255.224
+256 - 224 = 32
+256/32 = 8 subredes
+2^5 - 2 = 32 - 2 = 30 hosts para cada subrede
+ip da subrede
+207.209.68.0
+207.209.68.32
+207.209.68.64
+207.209.68.96
+207.209.68.128
+207.209.68.160
+207.209.68.192
+207.209.68.224
+ip do 1º host
+207.209.68.1
+207.209.68.33
+207.209.68.65
+207.209.68.97
+207.209.68.129
+207.209.68.161
+207.209.68.193
+207.209.68.225
+ip ultimo host
+207.209.68.30
+207.209.68.62
+207.209.68.94
+207.209.68.126
+207.209.68.158
+207.209.68.190
+207.209.68.222
+207.209.68.254
+broad
+207.209.68.31
+207.209.68.63
+207.209.68.95
+207.209.68.127
+207.209.68.159
+207.209.68.191
+207.209.68.223
+207.209.68.255
+
+c) var: 256 – 240 = 16 
+131.107.0.0/20
+
+ip subrede
+131.107.0.0
+ip 1º host
+131.107.0.1
+ip ultimo host 
+131.107.15.254
+broad
+131.107.15.255
+numero de subredes
+2^4 = 16
+numero de hosts
+2^12 – 2 = 4094
+
+d) var: 256 – 248 = 8
+ 10.0.0.0/13
+ip subrede 
+10.0.0.0
+ip 1º host
+10.0.0.1
+ip ultimo host
+10.7.255.254
+broad
+10.7.255.255
+numero de subredes
+2^5 = 32
+numero de hosts 
+2^10 – 2 = 524286
+
+			
+questão 19
+rede: 201.43.127.x
+5 subredes
+5 hosts 
+Classe c
+2^x >= 5
+x>=3
+Mascara de subrede: 255.255.255.224
+Var: 256 – 224 = 32
+
+Id subrede: 201.43.127.0
+range: 201.43.127.1 ate 201.43.127.30
+broad: 201.43.127.31
+numero de hosts: 2^5-2= 30
+
+Id subrede: 201.43.127.32
+range: 201.43.127.33 ate 201.43.127.62
+broad: 201.43.127.63
+numero de hosts: 2^5-2= 30
+
+Id de subrede: 201.43.127.64
+range: 201.43.127.65 ate 201.43.127.126
+broad: 201.43.127.127
+numero de hosts: 2^5-2=30
+
+Id de subrede: 201.43.127.128
+range: 201.43.127.129 ate 201.43.127.190
+broad: 201.43.127.191
+numero de hosts: 2^5-2=30
+
+Id de subrede: 201.43.127.192
+range: 201.43.127.192 ate 201.43.127.254
+broad: 201.43.127.255
+numero de hosts: 2^5-2=30
+
+			
+
