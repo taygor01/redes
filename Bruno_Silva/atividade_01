@@ -1,0 +1,49 @@
+
+Questão 01. Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas.
+
+- Topologias Físicas pode ser representada de várias maneiras. As mais utilizadas e conhecidas são as topologias do tipo estrela, 
+barramento e anel.
+
+A topologia ponto a ponto é a mais simples. Une dois computadores, através de um meio de transmissão qualquer.
+Dela pode-se formar novas topologias, incluindo novos nós em sua estrutura.
+
+Topologia barramento é comum e possui alto poder de expansão. Nela, todos os nós estão conectados a uma barra que é compartilhada entre todos os processadores, podendo o controle ser centralizado ou distribuído. O meio de transmissão usado nesta topologia é o cabo coaxial.
+
+A topologia em anel utiliza em geral ligações ponto-a-ponto que operam em um único sentido de transmissão. O sinal circula no anel até chegar ao destino. Esta topologia é pouco tolerável à falha e possui uma grande limitação quanto a sua expansão pelo aumento de "retardo de transmissão" (intervalo de tempo entre o início e chegada do sinal ao nó destino).
+
+A topologia em estrela utiliza um nó central (comutador ou switch) para chavear e gerenciar a comunicação entre as estações. É esta unidade central que vai determinar a velocidade de transmissão, como também converter sinais transmitidos por protocolos diferentes. Neste tipo de topologia é comum acontecer o overhead localizado, já que uma máquina é acionada por vez, simulando um ponto-a-ponto.
+
+
+Questão 02. Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+
+A intranet é uma rede interna, fechada e exclusiva, com acesso somente para os funcionários de uma determinada empresa e muitas vezes liberado somente no ambiente de trabalho e em computadores registrados na rede. Porém quando alguma informação dessa intranet é aberta a clientes ou fornecedores dessa empresa, essa rede passa a ser chamada de extranet.É quando sua empresa tem uma intranet e seu fornecedor também e ambas essas redes privadas compartilham uma rede entre si, para facilitar pedidos, pagamentos e o que mais precisarem.
+A internet é um conjunto de redes locais espalhada ao redor do mundo, tornando possivo a interligação entre computadores ultilizando um protocolo especifico da internet
+
+Questão 03. Quais são as principais funções das 7 camadas do Modelo OSI?
+
+Open System Interconection, ou Sistema de Interconexão aberto. O processo começa na camada física, onde os sinais  elétricos são convertidos em zeros e uns, e termina na camada de aplicação.
+- Camada Física: O sinal que vem do meio (Cabos UTP), chega à camada física em formato de sinais elétricos e se transforma em bits. Navegando apenas sinais elétricos de baixa freqüência, a camada física identifica como 0 sinal elétrico com –5 volts e 1 como sinal elétrico com +5 volts. 
+- Camada de Enlace: A camada de enlace já entende um endereço, o endereço físico (MAC Address). Ela trata as topologias de rede, dispositivos como Switche, placa de rede, interfaces, etc., e é responsável por todo o processo de switching. Após o recebimento dos bits,  ela os converte de maneira inteligível, os transforma em unidade de dado, subtrai o endereço físico e encaminha para a camada de rede que continua o processo.
+- Camada de Rede: Pensando em WAN, é a camada que mais atua no processo. É responsável pelo tráfego no processo de internetworking. A partir de dispositivos como roteadores, ela decide qual o melhor caminho para os dados no processo, bem como estabelecimento das rotas.
+endereço físico, que o converte para endereço lógico (o endereço IP). Exemplo de  dispositivo atuante nessa camada é o Roteador, que sem dúvida é o principal agente no processo de internetworking, pois este determina as melhores rotas baseados no seus critérios.
+- Camada de transporte: É responsável pela qualidade na entrega/recebimento dos dados. Após os dados já endereçados virem da camada 3 ela gerencia esse processo, para assegurar de maneira confiável o sucesso no transporte dos dados, após os pacotes virem da camada de rede, já com seus “remetentes/destinatários”, é hora de entrega-los, como se as cartas tivessem  acabados de sair do correio, e o carteiro fosse as transportar.
+- Camada de sessão: Sessão responsável pelo processo da troca de dados/comunicação.É responsável por iniciar, gerenciar e terminar a conexão entre hosts. Para obter êxito no processo de comunicação, a camada de seção têm que se preocupar com a  sincronização entre hosts, para que a sessão aberta entre eles se mantenha funcionando. 
+- Camada de Apresentação: Atua como intermediaria no processo frente às suas camadas adjacentes. Ela cuida da formatação dos dados, e da representação destes, e ela é a camada responsável por  fazer com que duas redes diferentes (por exemplo, uma TCP/IP e outra IPX/SPX) se comuniquem, “traduzindo” os dados no processo de comunicação.
+- Camada de Aplicação: É a que mais notamos no dia a dia, pois interagimos direto com ela através de softwares como cliente de correio, programas de mensagens instantâneas, etc.É basicamente a interface direta para inserção/recepção de dados. Nela é que atuam o DNS, o Telnet, o FTP, etc. E ela pode  tanto iniciar quanto finalizar o processo, pois como a camada física, se encontra em um dos extremos do modelo.
+
+Questão 04. Quais são as camadas do padrão TCP/IP e suas funções correspondentes?
+
+Protocolo TCP/IP, actualmente é o protocolo mais usado em redes locais. Esse protocolo foi criado para ser usado na Internet. Uma das grandes vantagens do protocolo TCP/IP é que ele é roteável. Ele possui uma arquitectura aberta e qualquer fabricante pode adoptar a sua própria versão do protocolo TCP/IP no seu sistema operacional. 
+Camada de Aplicação – Esta camada faz a comunicação entre os aplicativos e o protocolo de transporte. 
+Camada de Transporte – Esta camada é responsável por captar os dados enviados pela camada de aplicação e transformá-los em pacotes, a serem repassados para a camada de Internet.
+Camada de Internet – Há vários protocolos que podem operar nesta camada: IP (Internet Protocol), ICMP (Internet Control Message Protocol), ARP (Address Resolution Protocol) e RARP (Reverse Address Resolution Protocol).
+Camada de Interface com a Rede – Esta camada é responsável por enviar o datagrama recebido pela camada de Internet em forma de um quadro através da rede.
+
+Questão 05. Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo OSI.
+- HUB: é um dispositivo que tem a função de interligar os computadores de uma rede local. Sua forma de trabalho é a mais simples, recebe dados vindos de um computador e os transmite às outras máquinas. Más nesse momento nenhum outro computador consegue enviar sinal, que só é liberado após o sinal anterior ser completamente distribuido.
+ - SWITCH: Muito semelhante ao hub, mas tem uma grande diferença em que os dados vindos do computador de origem somente são repassados ao computador de destino. Porque criam uma espécie de canal de comunicação exclusiva entre a origem e o destino. Dessa forma, a rede não fica "presa" a um único computador no envio de informações. Isso aumenta o desempenho da rede já que a comunicação está sempre disponível, exceto quando dois ou mais computadores tentam enviar dados simultaneamente à mesma máquina. 
+ - ROTEADOR: É um equipamento ultilizado em redes de maior porte, pode ser feito a mesma função do Switch e tem a capacidade de escolher uma melhor rota.
+Roteadores Estaticos: Escolhe sempre o menor caminho, independete se este caminho esta congestionado ou não.
+Roteadores dinâmicos: Trabalha para fazer o caminho mais rapido, mesmo que seja um caminho mais longo. São capazes de fazer uma compreensãod e dados para ter uma taxa de transferencia mais alta.
+
+
