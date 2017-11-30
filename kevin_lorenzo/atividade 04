@@ -1,0 +1,70 @@
+Questão 01. De acordo com o comportamento observado, o que seria default gateway (ou gateway padrão? 
+O gateway padrão é a porta de entrada e de saida da rede. É o roteador que possui o link de internet e é o responsável por rotear o trafego dos demais hosts da rede para a internet e vice-versa. Todo o tráfego destinado a endereços fora da rede será encaminhado ao default gateway. 
+
+Questão 02. O que a alteração do endereço mac da placa de rede pode ocasionar? Identifique apenas um caso.
+O wifi caiu, tivemos que reconecta-lo.
+
+Questão 03. Agora identifique quais portas são utilizadas pelos protocolos http, pop3, ssh, telnet, nntp e ftp. Utilize o comando grep X /etc/services, onde X é o nome do protocolo. 
+
+http		80/tcp		
+http		80/udp				
+https		443/tcp				
+https		443/udp
+http-alt		8080/tcp		
+http-alt		8080/udp
+
+pop3		110/tcp				
+pop3		110/udp		
+pop3s		995/tcp				
+pop3s		995/udppop3					
+pop3		110/udp		
+pop3s		995/tcp				
+pop3s		995/udp
+
+ssh		22/tcp				
+ssh		22/udp
+
+telnet		23/tcp
+rtelnet		107/tcp				
+rtelnet		107/udp
+telnets		992/tcp				
+telnets		992/udp
+tfido		60177/tcp
+nntp		119/tcp		
+nntps		563/tcp		
+nntps		563/udp
+
+ftp-data	20/tcp
+ftp		21/tcp
+tftp		69/udp
+sftp		115/tcp
+ftps-data	989/tcp				
+ftps		990/tcp
+venus-se	2431/udp			
+codasrv-se	2433/udp			
+gsiftp		2811/tcp
+gsiftp		2811/udp
+frox		2121/tcp			
+zope-ftp	8021/tcp			
+		
+Questão 04. Explique por que e-mails e acessos a sites são realizados via TCP e não UDP.
+O UDP é menos confiável, porque o tcp é baseado em conexões , o que não ocorre na udp. Nele não há procedimentos de verificação no envio e recebimento de dados e se algum pacote não for recebido, o computador de destino não faz uma nova solicitação, como acontece no tcp. O udp é mais rapido, porem inutilizavel em certas aplicações, como os e-mails. 
+
+Questão 05. Vamos listar as conexões TCP e UDP ativas em seu computador. Para tanto, rode sudo netstat -lt e sudo netstat -lu, respectivamente. Comente sobre a saída observada e em que circunstâncias o netstat pode ser útil.
+Tcp
+tcp        0      0 lab-HP-Compaq-80:domain                        
+tcp        0      0 *:ssh                                              
+tcp6       0      0 [::]:http                                      
+tcp6       0      0 [::]:ssh                                   
+
+Conexões Internet Ativas (somente servidores)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      
+udp        0      0 *:34573                                                
+udp        0      0 lab-HP-Compaq-80:domain                                
+udp        0      0 *:bootpc                                               
+udp        0      0 *:ipp                                                  
+udp        0      0 *:mdns                                                  
+udp6       0      0 [::]:47889                                           
+udp6       0      0 [::]:mdns  
+
+O netstat é utilizado para encontrar o tcp e o udp. Nesse caso ambos deram o resultado de 0.
