@@ -1,0 +1,85 @@
+Questão 01. De acordo com o comportamento observado, o que seria default gateway (ou gateway padrão?)
+É a porta de entrada e de saída da rede. Ele é o roteador que possui o link de Internet e é o responsável por rotear o tráfego dos demais hosts da rede para a Internet.
+
+Questão 02. O que a alteração do endereço mac da placa de rede pode ocasionar? Identifique apenas um caso.
+Pode causar conflito com mesmo endereço do MAC, e o roteador irá desconectar ou negar serviços a um dos dispositivos clonados.
+
+Questão 03. Agora identifique quais portas são utilizadas pelos protocolos http, pop3, ssh, telnet, nntp e ftp. Utilize o comando grep X /etc/services, onde X é o nome do protocolo. 
+Porta HTTP:
+http    80/tcp		
+http		80/udp				
+https		443/tcp			
+https		443/udp
+http-alt	8080/tcp	
+http-alt	8080/udp
+
+Porta POP3:
+pop3		110/tcp		
+pop3		110/udp		
+pop3s		995/tcp		
+pop3s		995/udp
+
+Porta SSH:
+ssh		22/tcp
+ssh		22/udp
+
+Porta TELNET: 
+telnet		23/tcp
+rtelnet		107/tcp				
+rtelnet		107/udp
+telnets		992/tcp				
+telnets		992/udp
+tfido		60177/tcp	
+
+Porta NNTP:
+nntp		119/tcp		
+nntps		563/tcp		
+nntps		563/udp	
+
+Porta FTP:
+ftp-data	  20/tcp
+ftp		      21/tcp
+tftp		    69/udp
+sftp		    115/tcp
+ftps-data   989/tcp				
+ftps		    990/tcp
+venus-se	  2431/udp			
+codasrv-se	2433/udp		
+gsiftp		  2811/tcp
+gsiftp		  2811/udp
+frox	    	2121/tcp			
+zope-ftp	  8021/tcp	
+
+Questão 04. Explique por que e-mails e acessos a sites são realizados via TCP e não UDP.
+A comunicação pela internet é feita, basicamente, através de protocolos, sendo o TCP (Transmission Control Protocol) um dos mais 
+importantes deles. Isso porque o TCP está incluído no conjunto de protocolos que formam o TCP/IP, a base de comunicação via
+dados de toda a internet. Esta talvez seja a principal função do TCP, ou seja, garantir que os pacotes sejam entregues sem 
+alterações, sem terem sido corrompidos e na ordem correta. 
+O UDP (User Datagram Protocol) é tido como um protocolo "irmão" do TCP, mas é mais simples e também menos confiável. 
+Isso acontece porque o funcionamento do TCP é, como já dito, baseado em conexões, o que não ocorre com o UDP. 
+Como conseqüência, não há procedimentos de verificação no envio e recebimento de dados (todavia, pode haver checagem de integridade) 
+e se algum pacote não for recebido, o computador de destino não faz uma nova solicitação, como acontece com o TCP. 
+
+
+Questão 05. Vamos listar as conexões TCP e UDP ativas em seu computador. Para tanto, rode sudo netstat -lt e sudo netstat -lu, respectivamente. Comente sobre a saída observada e em que circunstâncias o netstat pode ser útil.
+O netstat é utilizado para encontrar o TCP e o UDP. Nesse caso ambos encontrou 0.
+
+sudo netstat -lt
+
+Ligações de Internet Activas (só servidores)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      
+tcp        0      0 alunos-HP-Compaq:domain *:*                     ESCUTA     
+
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~$ sudo netstat -lu
+Ligações de Internet Activas (só servidores)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      
+udp        0      0 *:42344                 *:*                                
+udp        0      0 alunos-HP-Compaq:domain *:*                                
+udp        0      0 *:bootpc                *:*                                
+udp        0      0 *:26914                 *:*                                
+udp        0      0 *:ipp                   *:*                                
+udp        0      0 *:mdns                  *:*                                
+udp6       0      0 [::]:52329              [::]:*                             
+udp6       0      0 [::]:mdns               [::]:*  
+
+
