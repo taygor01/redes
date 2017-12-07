@@ -1,0 +1,48 @@
+01. Responda às seguintes questões do livro Redes de Computadores e a Internet, 5ª edição, de Kurose. O livro encontra-se na biblioteca:
+
+Seção 4.1. Questão 01:
+Na camada de rede um pacote é denominado de datagrama. O comutador de pacotes na camada de rede local ou ethernet é chamado switche, 
+os roteadores conectam os computadores de uma rede à internet por meio de chaveamento intermediário.
+
+Seção 4.4. Questão 12: Não, quem possui IP é o enlace do hospedeiro. Para enviar datagramas, o hospedeiro/roteador faz através do 
+enlace (a fronteira entre o enlace e o hospedeiro chama-se interface). 
+A transferência de datagramas entre interfaces se dá por causa de suas identificações, seus números de IP. 
+Por isso, cada interface tem um número de IP.
+
+
+Questão 13: 11011111.00000001.00000011.00011011
+
+Questão 14: Endereço IPv4: 10.17.8.46
+Máscara de Sub-rede IPv4: 255.255.248.0
+Gateway Padrão IPv4: 10.17.10.220
+Servidor DNS IPv4: 10.17.10.20
+
+Questão 18: O roteador distribui IP's privados para sua rede interna, para sair da internet ele precisa usar um NAT, se precisar sair
+mais de um computador para internet pelo mesmo endereço público atribuído pelo ISP, ele vai usar um NAT overload, os computadores vai sair
+pelo mesmo IP público mas usando portas de serviço diferentes.
+
+Questão 19: Conforme verificado os campos Internet header length, Identificação, NF, MF, Identificação do Fragmento, 
+Checksum do Cabeçalho e Opções foram removidos, em contra partida o campo Identificação de Fluxo foi adicionado ao IPv6. 
+Os campos Tipo de serviço, Tamanho total, TTL e Protocolo tiveram seus nomes trocados e posições alteradas, já os campos 
+Endereços da Fonte e endereços do Destino mantiveram nas duas versões, mas suportando uma quantidade de armazenamento maior no IPv6.
+
+Questão 02. Descreva roteamento estático e roteamento dinâmico. Cite diferenças entre eles.
+Descreva roteamento estático e roteamento dinâmico. Cite diferenças entre eles.
+Roteamento estatico é uma rede com um número limitado de roteadores para outras redes. Uma tabela de roteamento estático é construída
+manualmente pelo administrador do sistema, e pode ou não ser divulgada para outros dispositivos de roteamento na rede.
+Algumas vantagens do roteamento estático são a segurança obtida pela não divulgação de rotas que devem permanecer escondidas; 
+e a redução do overhead introduzido pela troca de mensagens de roteamento na rede.
+Roteamento dinamico são redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. 
+Uma tabela de roteamento dinâmico é construída a partir de informações trocadas entre protocolos de roteamento. 
+Os protocolos são desenvolvidos para distribuir informações que ajustam rotas dinamicamente para refletir alterações nas condições da rede.
+Em redes onde existem várias alternativas de rotas para um destino devem ser utilizados protocolos de roteamento.
+Estático -> É feito manualmente pelo administrador do sistema.
+Dinâmico -> É feito a partir de informações trocadas entre.
+
+
+03. Descreva o algoritmo Dijkstra.
+Algoritmo que soluciona o problema do caminho mais curto num grafo dirigido ou não dirigido com arestas de peso não negativo, 
+em tempo computacional O([m+n]log n) onde m é o número de arestas e n é o número de vértices.
+O algoritmo considera um conjunto S de menores caminhos, iniciado com um vértice inicial I. 
+A cada passo do algoritmo busca-se nas adjacências dos vértices pertencentes a S aquele vértice com menor distância rela.
+
