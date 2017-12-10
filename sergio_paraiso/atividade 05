@@ -1,0 +1,24 @@
+
+
+
+
+1-	Questão
+a- datagramas
+b- Na camada de entalce o comutador de pacotes e um switches e o roteador conecta os    computadores diretamente a internet através do chaveamento intermediário.
+Seção 4.4. Questões 12, 13, 14, 18, 19
+
+12- questão
+R- Sim, o numero de endereços ip e igual ao numero de interfaces.
+13- questão
+R- 11011111. 00000001.00000011.000111000.
+
+14- Endereço Ip – 192.168.56.1,  Mascara -255.255.255.0, Endereço DNS – 192.168.56.1, Roteador de default -192.168.0.1 .
+
+18- questão
+R- os roteadores normalmente usam nat e os endereços ips podem ser atribuídos aos computadores através do  protocolo DHCP.
+19- questão
+O cabeçalho ipv4 é composto por 12 campos físicos e o tamanho varia de 20 a 60 bytes, o cabeçalho ipv6, o número de campos foi reduzido para apenas 8 e o tamanho fixado em 40 bytes. Os campos em comum são versão, o tamanho de dados, endereço de origem e endereço de destino.
+2 – questão
+R- roteamento estático é quando uma rede, as informações do roteamento não sofrem alterações, quando por exemplo só existe uma rota possível. No roteamento dinâmico são redes com mais uma rota possível para o mesmo ponto, este utiliza protocolos para fazer a troca de uma rota alternativa, quando a rota primária se torna inoperante e para decidir qual a rota preferida para um destino.
+3-Questão
+É  usado para calcular caminho de custo mínimo entre os vértices de um grafo é o mais empregado, ele escolhe o caminho mais curto para um determinado ponto.
