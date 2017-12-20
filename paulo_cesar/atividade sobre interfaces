@@ -1,0 +1,67 @@
+Paulo Cesar de jesus Lima      turmar 421  informatica subsequente
+          
+                                                 Atividade 06/12/17
+                                                 
+
+1º) De acordo com o comportamento observado, o que seria default gateway ou gateway padrão?
+
+R - Pode ser traduzido como "portão de entrada". O gateway pode ser um PC com duas (ou mais) placas de rede, ou um dispositivo dedicado, utilizado para unir duas redes. Existem vários usos possíveis, desde interligar duas redes que utilizam protocolos diferentes, até compartilhar a conexão com a Internet entre várias estações. O endereço do gateway deve ser informado nas propriedades de rede, mas numa rede onde as estações estão configuradas para obter seus endereços automaticamente é possível configurar o servidor DHCP para enviar o endereço do gateway automaticamente. A estação enviará ao gateway qualquer requisição de endereço que não faça parte da rede local. Se, por exemplo você tiver uma rede com 3 micros, configurados com os endereços 192.168.0.1, 192.168.0.2 e 192.168.0.3, qualquer endereço fora do escopo 192.168.0.x será enviado ao gateway, que se encarregará de acessá-lo na outra rede, ou na Internet e entregar o resultado à estação. Quando você se conecta à internet através de um provedor de acesso qualquer, você recebe apenas um endereço IP válido. A princípio, isso permitiria que apenas um micro acessasse a web, mas é possível compartilhar a conexão entre vários micros via NAT, opção disponível tanto no Windows quanto no Linux. Quando você compartilha a conexão entre vários micros, apenas o servidor que está compartilhando a conexão possui um endereço IP válido, só ele "existe" na internet. Todos os demais acessam através dele. O default gateway ou gateway padrão é justamente o micro da rede que tem a conexão, é ele que os outros consultarão quando precisarem acessar qualquer coisa na internet. Por exemplo, se você montar uma rede doméstica com 4 PCs, usando os endereços IP 192.168.0.1, 192.168.0.2, 192.168.0.3 e 192.168.0.4, e o PC 192.168.0.1 estiver compartilhando o acesso à internet, as outras três estações deverão ser configuradas para utilizar o endereço 192.168.0.1 como gateway padrão.
+
+
+2º) O que a alteração do endereço mac da placa de rede pode ocasionar?indentifique apenas um caso.
+
+
+R - O Tails pode temporariamente mudar o endereço MAC da sua interface de rede para valores aleatórios durante uma sessão de trabalho. Isto é o que pode ser chamado de "alteração de endereço MAC" (ou "MAC address spoofing", em inglês). A falsificação do endereço MAC no Tails esconde o número de série de sua interface de rede e, até um certo ponto, também quem você é, para a rede local.
+    Usar seu próprio computador em uma rede pública sem registro, por exemplo um serviço de Wi-Fi grátis em um restaurante no qual você não precisa se registrar com sua identidade. Neste caso, a alteração de endereço MAC oculta o fato de que seu computador está conectado àquela rede.
+    Usar seu computador em uma rede que você usa frequentemente, por exemplo na casa de um amigo, no trabalho, na universidade, etc. Você já tem uma relação forte com este lugar, mas a alteração de endereço MAC oculta o fato de que seu computador está conectado a esta rede em um momento específico. Ela também oculta o fato de que você está usando Tails nesta rede.
+
+
+3º) Agora indentifeque quais portas são utilizadas pelos protocolos http,pop3,ssh,telnet,nntp e ftp.utilize o comando grep X/etc/services, onde X e o nome do protocolo.
+
+
+a) # Updated from http://www.iana.org/assignments/port - numbers and other
+   # sources like http://www.freebsd.org/cvsweb.cgi/src/etc/services.
+   http           80/tcp        www               # wordwideweb HTTP
+   http           80/udp                          # hypertxt transfer protocol
+   https          443/tcp                         http protocol over TLS/SSL 
+   https          443/udp
+   http - alt     8080/tcp      webcache          www.caching servece
+   http - alt     8080/udp
+ 
+b) pop3           110/tcp       pop - 3           # pop version 3  
+   pop3           110/udp       pop - 3 
+   pop3s          995/tcp                         # pop - 3 over SSL 
+   pop3s          995/udp
+
+
+c) tftp           69/tcp 
+   sftp           115/tcp
+   ftps - data    989/tcp                          # FTP over SSL (data)  
+   ftps           990/tcp 
+   venus - se     2431/udp                         # udo sftp side effect
+   codasrv - se   2433/udp                         # udp sftp side effect
+   gsftp          2811/tcp 
+   gsiftp         2811/udp
+   frox           2121/tcp                         # frox: caching ftp proxy
+   zope - ftp     8021/tcp
+
+
+4º) Explique porque e-mails e acessos a site são realizados  via TCP e nao UDP.
+
+
+R - O protocolo TCP fornece o serviço de entrega de dados orientados à conexão de maneira confiável e full-duplex, ou seja, antes de transmitir os dados é necessário que haja uma conexão estabelecida. O processo de conexão é conhecido como three-way-handshake e ocorre da seguinte maneira:
+    A origem inicia a conexão enviando um pacote do tipo SYN que contém o número da porta que se deseja usar na conexão e o número de sequência inicial
+    O destino reconhece um sinal do tipo ACK, que consiste do pacote SYN de origem mais um
+    A origem reconhece o ACK com o número do sinal SYN do destino mais um
+    A transmissão de pacotes é feita em grupos, e a cada pacote é atribuído um número de sequência e uma confirmação de recebimento é usada para garantir que o destino recebeu o pacote. Caso a origem não receba a confirmação, o pacote é reenviado. É comum que os pacotes cheguem fora de ordem a destino, o que reforça a necessidade de numeração correta dos pacotes.
+    O janelamento TCP consiste na regulagem da quantidade de informação que pode ser transmitida por uma conexão TCP antes que um ACK seja recebido. A grante vantagem do TCP é a confiabilidade.
+    Este protocolo(UDP) não é orientado à conexão e, portanto, não é reconhecido como confiável. Não há garantia de que os dados foram realmente recebidos pelo destino, sendo adequado para pequenas quantidades de dados em que a garantia de entrega não é mandatória. Alguns exemplos deste tipo de uso são os broadcasts e os multicasts, como videoconferências.
+    
+
+
+
+
+
+
+
+
