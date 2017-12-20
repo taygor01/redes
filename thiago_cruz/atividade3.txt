@@ -1,0 +1,45 @@
+
+Questão 12
+
+Sim, porém depende da quantidade de interfaces podendo cada interface ter um endereço ip
+
+Questão 13
+223.1.3.27
+II0IIIII.0000000I.000000II.000II0II
+
+Questão 14
+
+
+Questão 19
+IPv4	IPv6
+Os endereços têm 32 bits (4 bytes) de tamanho.	Os endereços têm 128 bits (16 bytes) de tamanho.
+Registros de endereço (A) no DNS mapeiam nomes de hosts para endereços IPv4.	Registros de endereço (AAAA) no DNS mapeiam nomes de hosts para endereços IPv6.
+Registros do tipo Pointer (PTR) no domínio IN-ADDR.ARPA DNS mapeiam endereços IPv4 addresses para nomes de hosts.	Registros do tipo Pointer (PTR) no domínio IP6.ARPA DNS mapeiam endereços IPv6 para nomes de hosts.
+IPSec é opcional e deverá ser suportado externamente.	O suporte ao IPSec não é opcional.
+O cabeçalho não identifica o fluxo de caminho ou tipo de tráfego para tratamento de QoS pelos roteadores.	O cabeçalho contém o campo Flow Label,que identifica o caminho e associa datagramas que fazem parte da comunicação entre duas aplicações e o campo Traffic Class,que assinala a classe do serviço e permite tratamento de QoS pelo roteador.
+Tanto os roteadores quanto o host de envio fragmentam os pacotes.	Os roteadores não suportam a fragmentação de pacotes. O host de envio efetua a fragmentação de pacotes.
+O cabeçalho inclui o Checksum,campo de verificação para o cabeçalho do datagrama.	O cabeçalho não inclui o campo Checksum.
+O cabeçalho incluí opções.	Dados adicionais são suportados através de cabeçalhos de extensão.
+ARP usa pedidos de broadcast ARP para resolver endereços IP para endereços MAC/Hardware.	Utiliza mensagens Multicast Neighbor Solicitation para resolver os endereços IP para endereços MAC.
+O Internet Group Management Protocol (IGMP) gerencia  os membros de grupos de subrede locais.	As mensagens Multicast Listener Discovery (MLD) gerenciam os membros em grupos de subrede locais.
+Endereços de Broadcast são usados para enviar tráfego a todo os nós de uma subrede.	O IPv6 usa um escopo de endereço multicast link-local para todos os nós.
+Pode ser configurado manualmente ou por DHCP.	Não requer configuração manual ou DHCP.
+Deve suportar um tamanho de pacote de 576-byte (possivelmente fragmentado).	Deve suportar um tamanho de pacote de 1280-byte (sem fragmentação).
+
+
+
+Roteamento é o processo utilizado pelo roteador para encaminhar um pacote para uma determinada rede de destino. Este processo é baseado no endereço IP de destino, os dispositivos intermediários utilizam este endereço para conduzir o pacote até seu destino final. Evidente que para tomar essas decisões o dispositivo roteador tem que aprender os caminhos até chegar ao destino, quando utilizamos protocolos de roteamento dinâmico esta informação é obtida através dos outros roteadores da rede, no caso do roteamento estático o administrador deve inserir o caminho manualmente.
+ 
+
+Roteamento estático: Utiliza uma rota pré-definida e configurada manualmente pelo administrador da rede.
+
+ Roteamento dinâmico: Utiliza protocolos de roteamentos que ajustam automaticamente as rotas de acordo com as alterações de topologia e outros fatores, tais como o tráfego.
+
+A configuração de roteamento de uma rede específica nem sempre necessita de protocolos de roteamento. Existem situações onde as informações de roteamento não sofrem alterações, por exemplo, quando só existe uma rota possível, o administrador do sistema normalmente monta uma tabela de roteamento estática manualmente
+1. Roteamento estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático. Uma tabela de roteamento estático é construída manualmente pelo administrador do sistema, e pode ou não ser divulgada para outros dispositivos de roteamento na rede. Tabelas estáticas não se ajustam automaticamente a alterações na rede, portanto devem ser utilizadas somente onde as rotas não sofrem alterações. Algumas vantagens do roteamento estático são a segurança obtida pela não divulgação de rotas que devem permanecer escondidas; e a redução do overhead introduzido pela troca de mensagens de roteamento na rede.
+2. Roteamento dinâmico: redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. Uma tabela de roteamento dinâmico é construída a partir de informações trocadas entre protocolos de roteamento. Os protocolos são desenvolvidos para distribuir informações que ajustam rotas dinamicamente para refletir alterações nas condições da rede. Protocolos de roteamento podem resolver situações complexas de roteamento mais rápida e eficientemente que o administrador do sistema. Protocolos de roteamento são desenvolvidos para trocar para uma rota alternativa quando a rota primária se torna inoperável e para decidir qual é a rota preferida para um destino. Em redes onde existem várias alternativas de rotas para um destino devem ser utilizados protocolos de roteamento.
+
+Algoritmo de Dijkstra
+
+O algoritmo de Dijkstra foi desenvolvido por Edsger Wybe Dijkstra em 1959. Este algoritmo tem por função encontrar o caminho mais curto entre duas arestas dentro de um grafo. Para definição deste caminho mínimo é necessário que cada aresta possua um peso positivo, ou seja, cada aresta deve possuir uma métrica para que o algoritmo possa encontrar um caminho onde a soma dos pesos das arestas seja o mais baixo entre todos os caminhos possíveis entre os pontos.
+Dentro de uma rede de dados sem-fio, para um melhor desempenho do serviço de roteamento é extremamente necessário a definição de uma métrica que irá gerar um valor para cada nó pertencente à rede. Esta métrica será o valor pelo qual o algoritmo de Dijsktra utilizará para a definição do caminho de menor custo entre o ponto inicial e o ponto final. Este métrica poderá ser qualquer valor como congestionamento, taxa de perda ou velocidade.
