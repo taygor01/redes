@@ -1,0 +1,62 @@
+RESPOSTAS DAS QUESTÕES
+
+
+
+
+Questão 01. De acordo com o comportamento observado, o que seria default gateway (ou gateway padrão? 
+
+RESPOSTA:
+
+Pode ser traduzido como "portão de entrada". O gateway pode ser um PC com duas (ou mais) placas de rede, ou um dispositivo dedicado, utilizado para unir duas redes. Existem vários usos possíveis, desde interligar duas redes que utilizam protocolos diferentes, até compartilhar a conexão com a Internet entre várias estações. O endereço do gateway deve ser informado nas propriedades de rede, mas numa rede onde as estações estão configuradas para obter seus endereços automaticamente é possível configurar o servidor DHCP para enviar o endereço do gateway automaticamente. A estação enviará ao gateway qualquer requisição de endereço que não faça parte da rede local. Se, por exemplo você tiver uma rede com 3 micros, configurados com os endereços 192.168.0.1, 192.168.0.2 e 192.168.0.3, qualquer endereço fora do escopo 192.168.0.x será enviado ao gateway, 
+
+O default gateway ou gateway padrão é justamente o micro da rede que tem a conexão, é ele que os outros consultarão quando precisarem acessar qualquer coisa na internet. Por exemplo, se você montar uma rede doméstica com 4 PCs, usando os endereços IP 192.168.0.1, 192.168.0.2, 192.168.0.3 e 192.168.0.4, e o PC 192.168.0.1 estiver compartilhando o acesso à internet, as outras três estações deverão ser configuradas para utilizar o endereço 192.168.0.1 como gateway padrão.
+
+Questão 02. O que a alteração do endereço mac da placa de rede pode ocasionar? Identifique apenas um caso.
+
+RESPOSTA:
+
+No âmbito de uma WAN ou da Internet, a probabilidade de esta situação causar alguma confusão ou problema é mínima.
+Dentro de uma rede local, dentro do mesmo domínio ou entre 2 (ou mais) dispositivos conectados ao mesmo switch ou roteador, a coisa muda de figura.
+Neste caso, a situação de ter dois dispositivos usando o mesmo MAC address, pode ser causa de conflitos — que podem atingir até mesmo o provedor de acesso local.
+Uma vez que a rede Ethernet e seu roteador tomam suas decisões de distribuição do fluxo de dados ou switching basedos nos endereços de hardware, ter MACs duplicados envolvidos vai ser motivo de confusão certa.
+Ter endereços MAC clonados vai fazer os switches ficar confusos sobre a quem direcionar o fluxo.
+A presença de endereços MAC duplicados dá a definição técnica de um loop — cujo resultado costuma ser uma broadcast storm ou congestionamento de transmissões.
+Na prática, o que acontece quando o provedor de acesso detecta 2 MAC addresses iguais?
+Normalmente, o provedor de acesso local ou o roteador irá desconectar ou negar serviços a um dos dispositivos clonados e tudo seguirá normalmente na rede (exceto para o dispositivo desconectado).
+Quando se tratar de uma rede mais ampla ou WAN, se o dispositivo clonado estiver do outro lado do roteador de acesso, o problema provavelmente passará despercebido, contudo.
+
+
+
+Questão 03. Agora identifique quais portas são utilizadas pelos protocolos http, pop3, ssh, telnet, nntp e ftp. Utilize o comando grep X /etc/services, onde X é o nome do protocolo. 
+
+RESPOSTA:
+
+Para aumentar a segurança, pode-se usar algum esquema de criptografia neste nível, sendo que os dados só serão decodificados na camada 6 do dispositivo receptor.
+
+Ela trabalha transformando os dados em um formato no qual a camada de aplicação possa aceitar.
+
+7 - Camada de Aplicação
+
+A camada de aplicação é responsável por identificar e estabelecer a aplicação (programa) o qual será utilizado entre a máquina destinatária e o usuário como também disponibiliza os recursos (protocolo) para que tal comunicação aconteça. Por exemplo, ao solicitar a recepção de e-mail através do aplicativo de e-mail, este entrará em contato com a camada de Aplicação do protocolo de rede efetuando tal solicitação (POP3, IMAP). Tudo nesta camada é direcionado aos aplicativos. Alguns protocolos utilizados nesta camada são:
+HTTP, SMTP, FTP, SSH, RTP, Telnet, SIP, RDP, IRC, SNMP, NNTP, POP3, IMAP, BitTorrent, DNS, Ping
+
+
+
+
+Questão 04. Explique por que e-mails e acessos a sites são realizados via TCP e não UDP.
+
+RESPOSTA:
+
+A comunicação pela internet é feita, basicamente, através de protocolos, sendo o TCP (Transmission Control Protocol) um dos mais importantes deles. Isso porque o TCP está incluído no conjunto de protocolos que formam o TCP/IP, a base de comunicação via dados de toda a internet. 
+as principais características do TCP são:
+:: Garantir a entrega de datagramas IP: esta talvez seja a principal função do TCP, ou seja, garantir que os pacotes sejam entregues sem alterações, sem terem sido corrompidos e na ordem correta. O TCP tem uma série de mecanismos para garantir esta entrega;
+:: Executar a segmentação e o reagrupamento de grandes blocos de dados enviados pelos programas, garantir o seqüenciamento adequado e a entrega ordenada de dados segmentados: esta característica refere-se ao recurso de dividir grandes arquivos em pacotes de dados menores e transmitir cada pacote separadamente. Os pacotes podem ser enviados por caminhos diferentes e chegar fora de ordem. O TCP tem mecanismos para garantir que, no destino, os pacotes sejam ordenados corretamente, antes de serem entregues ao programa de destino.
+:: Verificar a integridade dos dados transmitidos usando cálculos de soma de verificação: o TCP faz verificações para garantir que os dados não foram alterados ou corrompidos durante o transporte entre a origem e o destino. 
+:: Enviar mensagens positivas dependendo do recebimento bem-sucedido dos dados. Ao usar confirmações seletivas, também são enviadas confirmações negativas para os dados que não foram recebidos: no destino, o TCP recebe os pacotes de dados, verifica se estão ok e, em caso afirmativo, envia uma mensagem para a origem, confirmando cada pacote que foi recebido corretamente. Caso um pacote não tenha sido recebido ou tenha sido recebido com problemas, o TCP envia uma mensagem ao computador de origem, solicitando uma retransmissão do pacote. Com esse mecanismo, apenas pacotes com problemas terão que ser reenviados, o que reduz o tráfego na rede e agiliza o envio dos pacotes.
+:: Oferecer um método preferencial de transporte de programas que devem usar transmissão confiável de dados baseada em sessões, como bancos de dados cliente/servidor e programas de correio eletrônico: o TCP é muito mais confiável do que protocolos como o UDP (explicado adiante) e é indicado para programas e serviços que dependam de uma entrega confiável de dados.
+
+
+
+
+Questão 05. Vamos listar as conexões TCP e UDP ativas em seu computador. Para tanto, rode sudo netstat -lt e sudo netstat -lu, respectivamente. Comente sobre a saída observada e em que circunstâncias o netstat pode ser útil.
+
