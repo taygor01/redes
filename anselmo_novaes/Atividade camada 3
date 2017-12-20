@@ -1,0 +1,71 @@
+1. Um tipo de camada de rede é um Datagrama.
+   Diferença entre roteador e comutador de camada de enlace:
+   Comutador designa um dispositivo geral de comutação de pacotes que transfere um pacote de interface de enlace de entrada para 
+   interface de enlace de saída conforme o valor que está em um campo no cabeçalho do pacote. Alguns comutadores de pacotes, deno-
+   minados comutadores de camada de enlace baseiam a decisão de repasse no valor que está no campo da camada de enlace. Outros 
+   denominados roteadores, baseiam sua decisão de repasse no valor que está no campo da camada de rede.
+   
+   12.Sim. Em geral para cada rede disponível no roteador existe um endereço ip.
+   13.
+   223.1.3.27 = 11011111.00000001.00000011.11011000   
+   14.
+   IP: 10.17.9.205
+   MÁSCARA: 255.255.248.0
+   ROTEADOR DEFAULT : 10.17.10.220
+   IP SERVIDOR DNS :10.17.10.10 
+                    8.8.8.8
+   18. Através do DHCP os endereços serão designados aos hosts.   
+       Os novos roteadores já possuem essa opção pois funcionam como modem. 
+   19. 
+  Os campos Endereços da Fonte e endereços do Destino se mantiveram nas duas versões.
+ 
+  Diferenças:         
+           
+           IPV4                                                               IPV6
+   Endereço de 32bits                                          Endereço de 128bits
+   Suporte opcional de IPSec                                   Suporte obrigatório de IPSec
+   Nenhuma referência a capacidade de QoS -                    Introduz capacidades de QoS utilizando para isso o campo      
+   (Quality of Service)                                        Flow label
+                       
+                                                              
+   Processo de fragmentação realizada pelo router              A fragmentação deixa de ser realizada pelos routers e passa a ser                                                          
+                                                               processada pelos host emissores
+      
+   O cabeçalho inclui os campos de opção                       Todos os campos de opção foram mudados para dentro do campo 
+                                                               extension header
+   
+   O Adress Resolution Protocol (ARP), utiliza                 O ARP foi abandonado, sendo substituídos pelas mensagens Neibhbor
+   requisitos do tipo Broadcast                                Discovery
+   
+   Internet Resolution Management Protocol (IGMP)
+   é utilizado para gerir relações locais de sub-redes         O IGMP foi substituído por mensagens Multcast Listner Discovery
+  
+   
+   Os Endereços de Broadcast são utilizados para enviar        Deixa de existir o endereço de Broadcast, para utilizar endereços    
+   tráfego para todos os host de uma rede                      multicast 
+               
+   O endereço tem de ser configurado manualmente               Adição de funcionalidades de autoconfiguração 
+   
+   Suporta pacotes de 576 bytes, passiveis de serem            Suporta pacotes de 1280 bytes, sem fragmentação
+   fragmentados 
+   
+   Os campos Internet header length, Identificação, NF, MF, Identificação do Fragmento, Checksum do Cabeçalho e Opções foram 
+   removidos, já o campo Identificação de Fluxo foi adicionado ao IPv6. Os campos Tipo de serviço, Tamanho total, TTL e Protocolo 
+   tiveram seus nomes trocados e posições alteradas.
+   
+
+
+2. 
+O termo roteamento refere-se ao processo de escolher um caminho sobre o qual pacotes serão enviados, ou seja, quem vai criar a 
+tabela de rotas. No roteamento estático as informações que um roteador precisa saber para poder encaminhar pacotes corretamente 
+aos seus destinos são colocadas manualmente na tabela de rotas. No roteamento dinâmico, os roteadores podem
+descobrir estas informações automaticamente e compartilhá-la com outros roteadores via protocolos de roteamento dinâmicos.
+Um protocolo de roteamento dinâmico é uma linguagem a qual um roteador fala com outros roteadores a fim de compartilhar 
+informações sobre alcançabilidade e estado das redes, determinando o próximo melhor caminho para um destino se o atual tornar-se 
+inacessível devido à queda de um link, ou se uma região fica inacessível em virtude do congestionamento.
+No roteamento estático é relativamente simples de configurar em redes pequenas; porém é difícil a manutenção.
+A capacidade de se adaptar (compensar) às mudanças de topologia é a vantagem mais importante que o roteamento 
+dinâmico oferece quando comparado ao roteamento estático..
+
+3. O algoritmo de Dijkstra possui a função de obter o caminho de menor custo. entende-se caminho de menor custo o fato de sua 
+conexões apresentarem pesos, entende-se peso como se fosse o comprimento de cada conexão entre os vértices.
