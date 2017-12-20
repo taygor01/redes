@@ -1,0 +1,23 @@
+ATIVIDADE 04
+QUESTÃO 01
+RESPOSTA:  O default gateway, ou gateway padrão é a porta de entrada e de saída da rede. Ele é o roteador que possui o link de Internet e é o responsável por rotear o tráfego dos demais hosts da rede para a Internet.
+QUESTÃO 02
+RESPOSTA:
+AO ALTERAR O ENDEREÇO MAC A REDE OCASIONARÁ VARIOS 	PROBLEMAS COMO A NÃO CONEXÃO NA INTERNET.
+QUESTÃO 03
+RESPOSTA:
+As portas TCP mais usadas (também chamadas de "well known ports") são as portas de 0 a 1023, que são reservadas para serviços mais conhecidos e utilizados, como servidores web, FTP, servidores de e-mail, compartilhamento de arquivos, etc. A porta 80, por exemplo, é reservada para uso de servidores web HTTP, enquanto a porta 21 é a porta padrão para servidores FTP. A porta "0" é reservada, por isso não entra realmente na lista.
+O sistema de encriptação utilizado pelo SSH, assim como os túneis encriptados, trabalham no nível 6 do modelo OSI, acima da camada de sessão, do protocolo TCP/IP, e de toda a parte física da rede. Ao contrário do FTP, o SSH não precisa de portas adicionais: tudo é feito através da porta 22, que é a única que precisa ficar aberta no firewall do servidor. O cliente não precisa ter porta alguma aberta e pode acessar através de uma conexão compartilhada via NAT.
+O Telnet foi muito usado durante as décadas de 1980 e 1990, mas depois caiu em desuso, sendo rapidamente substituído pelo SSH. Além de não possuir nenhum dos recursos mais sofisticados suportados pelo SSH, o Telnet é um protocolo completamente aberto (no sentido pejorativo), que transmite login, senha e todos os comandos em texto puro. Isso torna ridiculamente simples capturar a transmissão (usando, por exemplo, o Wireshark, que veremos no capítulo 5) e assim "invadir" o servidor, usando a senha roubada.
+Programas como o Thunderbird e o Outlook contatam o servidor POP3 através da porta 110 e baixam as mensagens utilizando um conjunto de comandos de texto, derivados do Telnet. Originalmente, o POP3 é um protocolo tão inseguro quanto o Telnet, mas os servidores atuais suportam encriptação via SSL (o mesmo sistema de encriptação usado para acessar páginas seguras, via HTTPs), o que garante um bom nível de segurança.
+O NTP (Network Time Protocol) é o protocolo usado para sincronizar o relógio em relação a outras máquinas da rede ou da Internet. Manter os relógios das máquinas sincronizados é uma necessidade em grandes redes, com grande uso de arquivos compartilhados, já que fica difícil acompanhar os horários de atualização dos arquivos se cada máquina utiliza um horário diferente.
+:: 21 - FTP;
+:: 23 - Telnet;
+:: 80 - HTTP;
+:: 110 - POP3;
+:: 443 - HTTPS.
+QUESTÃO 04
+RESPOSTA:
+O TCP (Transmission Control Protocol)  Oferece um método preferencial de transporte de programas que devem usar transmissão confiável de dados baseada em sessões, como bancos de dados cliente/servidor e programas de correio eletrônico: o TCP é muito mais confiável do que protocolos como o UDP  e é indicado para programas e serviços que dependam de uma entrega confiável de dados.
+ Garante a entrega de datagramas IP:  a principal função do TCP, ou seja, garantir que os pacotes sejam entregues sem alterações, sem terem sido corrompidos e na ordem correta. O TCP tem uma série de mecanismos para garantir esta entrega
+O UDP (User Datagram Protocol) é tido como um protocolo , mas é mais simples e também menos confiável. Isso acontece porque o funcionamento do TCP é baseado em conexões, o que não ocorre com o UDP. 
