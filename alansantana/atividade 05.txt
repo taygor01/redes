@@ -1,0 +1,33 @@
+1- datagramas
+
+2- na camada de enace o de comutador de pacotes e um switches para rede local ou eternet e o roteador conecta os computadores diretamente a eternet atravez de chaveamento entermediaria.
+
+12 -sim, onumos de endereco IP e igual ao numero de interface.
+
+13 - 11011111.00000001.00000011.00011011
+
+14- IP =10.17.8.50
+  mascara- 255.255.248.0
+  DNS -10.17.10.20.
+  
+  
+   =======================================================================================
+   
+   18 - O roteador distribui IP's privados, para sua rede interna , para sair para a internet ele precisa usar um NAT, se precisar sair mais de um computador para a internet pelo mesmo endereco publico atribuido pelo seu ISP, ele vai usar um NAT overload , os computadores vai sair pelo mesmo IP publico mas usando portas de servicos diferentes.
+   
+   19- cabecaho em IPV6:              
+   
+   versao-/ classe de trafego ;/ identificacao de fluxo;
+   
+   tamanho dos dados/proximo cabeçaho/imites de sato
+   
+      endereço de fonte -128 bits;
+      evdereço do destino - 128 bits;
+   
+         
+         Cabeçaho em IPv4:
+         
+      versao/ IhL/tipo de serviços /     Tamanho Total
+        idetificaçao /NR /MF /Identificaçao do fragmento .
+        TTL / Protocolo / Checksum do cabeçalho.
+       
