@@ -1,0 +1,49 @@
+1º) em Datogramas
+
+
+2º) uma vez na camada de enlace o computador de pacotes e um SWITCHES para rede local ou ETHERNT eo roteador conecta os computadores diretamente a internet atravez de chaveamento intermediario.
+
+
+12º)claro que o numero de endereços IPs sao iguais ao numero, ero de interfaces.
+
+
+13º) 11011111.00000001.00000011.00011011.
+
+
+14º) IP -      10.17.8.50
+     Mascara - 255.255.248.0
+     DNS -     10.17.20
+
+18º)O Roteador distribui IP's privados, para sua rede interna, para sair para a internet ele precisa usar um NAT, se precisar sair mais de um computador para a internet pelo mesmo endereço público atribuído pelo seu ISP, ele vai usar um NAT overload, os computadores vai sair pelo mesmo IP público mas usando portas de serviço diferentes.
+
+
+19º) O suporte de modelo do  IP Móvel no IPv6 representa uma combinação natural das experiências ganhas com o desenvolvimento do suporte no IPv4, em conjunto com as oportunidades provenientes pelo modelo e desenvolvimento de uma nova versão IP e um novo modelo de protocolo oferecido pelo IPv6. O IPv6 agora é totalmente integrado com o IP, além de ter muitos melhoramentos sobre o IPv4.
+        – Capacidade expandida de Routing e Endereçamento: o endereço IP foi aumentado de 32 para 128 bits, para suportar mais níveis hierárquicos de endereçamento e um número maior de nós de rede, além de simplificar a auto-configuração de endereços. A escalabilidade do routing multicast foi aumentada adicionando o campo scope aos endereços multicast.
+
+        – Novo tipo de Endereço: o endereço denominado anycast foi adicionado ao protocolo para identificar conjuntos de nós de rede, de forma que ao ser enviado um pacote de dados para o endereço anycast, este é entregue a qualquer um dos nós do conjunto. O uso de endereços anycast na rota de origem permite aos nós controlarem melhor o caminho através do qual o tráfego flui.
+
+        – Simplificação do formato do Cabeçalho (Header): alguns campos do cabeçalho IPv4 foram retirados ou tornaram-se opcionais, para reduzir o processamento dos pacotes de dados mais comuns e para manter o custo de banda do cabeçalho do IPv6 o mais reduzido possível, apesar do aumento do campo de endereços. Embora o campo de endereço seja 4 vezes maior, o cabeçalho é apenas 2 vezes maior.
+              – Autoconfiguração do endereço: Suporte para atribuição automática de endereços numa rede IPv6, podendo ser suprimido o servidor de DHCP que era usual no IPv4.
+
+        – Suporte aperfeiçoado para Opções: foram feitas alterações na forma como os campos de opções presentes no cabeçalho são codificados, permitindo um melhor encaminhamento dos pacotes de dados, uma limitação menos restrita para as opções propriamente ditas e uma maior flexibilidade para introduzir novas opções no futuro.
+
+        – Qualidade de Serviço: uma nova facilidade para diferenciar tipos de serviços foi adicionada para permitir a inclusão de um rótulo (Flow Label) aos pacotes de dados que pertencem a um determinado tipo de tráfego para o qual o nó de origem requisita um tratamento especial, tal como para um tipo de serviço não padronizado ou para um serviço que requer processamento em tempo real.
+
+        – Autenticação e Privacidade: foram incluídas novas extensões ao protocolo que oferecem suporte para autenticação, integridade de dados e confidencialidade. Estas extensões são incluídas como elementos básicos do protocolo e serão incluídas em todas as implementações.
+
+        – Suporte para IP Móvel: O suporte é também integrado dentro do IPv6 permitindo que nós móveis e IP Móvel coexistam eficientemente com encaminhadores que fazem uso do “ingress filtering”. Um nó móvel agora usa o seu endereço care-of como endereço de origem no cabeçalho IP dos datagramas que ele envia, permitindo que estes passem normalmente através de encaminhadores “ingress filtering”.
+
+
+2º) Estático -> É feito manualmente pelo administrador do sistema.
+    Dinâmico -> É feito a partir de informações trocadas entre protocolos de roteamento.
+
+Diferença:
+Roteamento estático: uma rede com um número limitado de roteadores para outras redes pode ser configurada com roteamento estático. Uma tabela de roteamento estático é construída manualmente pelo administrador do sistema, e pode ou não ser divulgada para outros dispositivos de roteamento na rede. Tabelas estáticas não se ajustam automaticamente a alterações na rede, portanto devem ser utilizadas somente onde as rotas não sofrem alterações. Algumas vantagens do roteamento estático são a segurança obtida pela não divulgação de rotas que devem permanecer escondidas; e a redução do overhead introduzido pela troca de mensagens de roteamento na rede.
+Roteamento dinâmico: redes com mais de uma rota possível para o mesmo ponto devem utilizar roteamento dinâmico. Uma tabela de roteamento dinâmico é construída a partir de informações trocadas entre protocolos de roteamento. Os protocolos são desenvolvidos para distribuir informações que ajustam rotas dinamicamente para refletir alterações nas condições da rede. Protocolos de roteamento podem resolver situações complexas de roteamento mais rápida e eficientemente que o administrador do sistema. Protocolos de roteamento são desenvolvidos para trocar para uma rota alternativa quando a rota primária se torna inoperável e para decidir qual é a rota preferida para um destino. Em redes onde existem várias alternativas de rotas para um destino devem ser utilizados protocolos de roteamento. 
+
+
+3º) O algoritmo de Dijkstra, concebido pelo cientista da computação holandês Edsger Dijkstra em 1956 e publicado em 1959,[1][2] soluciona o problema do caminho mais curto num grafo dirigido ou não dirigido com arestas de peso não negativo, em tempo computacional O([m+n]log n) onde m é o número de arestas e n é o número de vértices. O algoritmo que serve para resolver o mesmo problema em um grafo com pesos negativos é o algoritmo de Bellman-Ford, que possui maior tempo de execução que o Dijkstra.
+
+O algoritmo considera um conjunto S de menores caminhos, iniciado com um vértice inicial I. A cada passo do algoritmo busca-se nas adjacências dos vértices pertencentes a S aquele vértice com menor distância relativa a I e adiciona-o a S e, então, repetindo os passos até que todos os vértices alcançáveis por I estejam em S. Arestas que ligam vértices já pertencentes a S são desconsideradas.
+
+Um exemplo prático do problema que pode ser resolvido pelo algoritmo de Dijkstra é: alguém precisa se deslocar de uma cidade para outra. Para isso, ela dispõe de várias estradas, que passam por diversas cidades. Qual delas oferece uma trajetória de menor caminho? 
