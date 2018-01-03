@@ -7,7 +7,7 @@ Unidade I:
 
    
 Unidade II:    
-**Atividade 06:** [Camada de Transporte - entrega 10/01](https://docs.google.com/document/d/1vT2ZbHZNHg04yoiqKXkCFFD_2z0DXe9VD6-pxhSbo-I/edit?usp=sharing)    
+**Atividade 06:** [Camada de Transporte - entrega 03/01](https://docs.google.com/document/d/1vT2ZbHZNHg04yoiqKXkCFFD_2z0DXe9VD6-pxhSbo-I/edit?usp=sharing)    
 **Atividade 07:** [wireshark - entrega 17/01](https://docs.google.com/document/d/1ORgJcwouVpAVo63lTZt-6fdnYp9VMEvnDnlQHPv6DFo/edit?usp=sharing)    
    
 [Video sobre o Github - Pull request e mais...](https://www.youtube.com/watch?v=zg8JcK1dgMI)
