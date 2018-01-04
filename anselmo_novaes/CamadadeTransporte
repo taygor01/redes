@@ -1,0 +1,88 @@
+Aluno: Anselmo Santos Novaes
+
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+( ) Camada 1 ( ) Camada 2 (x) Camada 3 ( ) Camada 4 ( ) Camada 5 ( ) Camada 6 ( ) Camada 7
+
+2. Qual a PDU da camada de transporte?
+(x) Segmento ( )Pacote ( )Dados ( )Bits ( )Quadros
+
+3. Quais os principais protocolos da camada de transporte?
+( )ARP (x)TCP ( )IP ( )DNS (x)UDP
+
+4. Marque as características que representam o protocolo TCP.
+(x) Orientado à conexão;
+( ) É um protocolo simples;
+( ) Entrega de dados com baixa sobrecarga;
+( ) Não orientado a conexão.
+( ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP);
+(x) Entrega de dados com sobrecarga adicional;
+(x) Entrega ordenada, confiável e realiza controle de fluxo
+(x) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+5. Marque as características que representam o protocolo UDP.
+( ) Orientado à conexão;
+(x) É um protocolo simples;
+(x) Entrega de dados com baixa sobrecarga;
+(x) Não orientado a conexão.
+(x) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP);
+( ) Entrega de dados com sobrecarga adicional;
+( ) Entrega ordenada, confiável e realiza controle de fluxo
+( ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+6. Para que serve o número de portas na camada de transporte?
+Resposta: É utilizado como forma de endereçamento de aplicações que forem solicitadas na rede, como HTTP - 80, POP3 - 110, 
+TELNET - 23, dentre outras.
+
+7. O que são os sockets?
+Resposta: É a junção do número da porta de origem/destino com o endereço IP de origem/destino.
+
+8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam 
+do computador A para o computador B tenham número de porta de origem X e número de porta destino Y. Quais são 
+os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+Resposta: 
+
+A -> B
+x    y
+
+B -> A
+y    x
+
+Veja que a mesmas portas que iniciam a comunicação entre A e B devem ser a mesma só que no sentido oposto.
+
+9. Descreva por que um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP.
+Resposta:
+Pelo fato da camada UDP ter menos overhead - mais rápida -, custa menos tempo e recursos.
+
+10. Suponha que o cliente A inicie uma sessão Telnet com o servidor S. Quase ao mesmo tempo, o cliente B também inicia uma sessão Telnet com o servidor S.
+Forneça possíveis números de porta de origem e destino para:
+a. os segmentos enviados de A para S.
+b. os segmentos enviados de B para S.
+c. os segmentos enviados de S para A.
+d. Os segmentos enviados de S para B.
+e. Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos
+segmentos de A para S seja o mesmo que de B para S?
+
+Resposta:
+
+a.   A     ->     S
+   50000         23
+   
+b.   B            S      
+   50999    ->    23
+   
+c.   S      ->     A
+    23           50000
+    
+d.   S      ->     A
+    23           50999
+    
+e. Sim,  é possível, pois a porta de origem escolhida pelo S.O é aleatória e pode coincidir, mas o que diferencia nesse caso
+é o endereço IP dos hospedeiros.
+
+
+
+
+
+
+
+
