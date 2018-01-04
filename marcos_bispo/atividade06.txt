@@ -1,0 +1,54 @@
+ Instituto Federal de Educação, Ciência e Tecnologia da Bahia
+Campus Jequié
+Curso Técnico de Informática
+Profº. Ramon Fontes
+Aluno: Marcos Bispo
+                            Camada de Transporte
+
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+
+(x ) Camada 3 
+2. Qual a PDU da camada de transporte? 
+
+(x ) Segmento
+3. Quais os principais protocolos da camada de transporte?
+ ( x)TCP 
+4. Marque as características que representam o protocolo TCP. 
+
+( x) Orientado à conexão; 
+5. Marque as características que representam o protocolo UDP. 
+
+( x) É um protocolo simples; 
+
+6. Para que serve o número de portas na camada de transporte?
+- A camada de transporte utiliza o conceito de portas, que serve para identifica qual processo 
+ deverá se encarregar da informação trazida por aquele pacote. Na prática, o aplicativo informa ao sistema operacional 
+ que estará escutando uma determinada porta e 
+ então todos os pacotes daquele protocolo (UDP ou TCP) serão repassados àquele processo de origem e destino.
+ 
+ 7. O que são os sockets?
+ -Socket é um mecanismo de comunicação que está entre as camadas de transporte e a de aplicações,usado normalmente 
+ para implementar um modelo cliente/servidor, que permite a troca de mensagens entre os processos através da rede.
+  8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam do computador
+  A para o computador B tenham número de porta de origem X e número de porta destino Y. 
+  Quais são os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+        y+x;0 to 1023-portas.
+     
+     9. Descreva por que um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP.  
+
+-Há aplicações em que é preferível entregar os dados o mais rapidamente possível, mesmo que algumas informações se percam no caminho. 
+É o caso, por exemplo, das transmissões de vídeo pela internet.
+
+10. Suponha que o cliente A inicie uma sessão Telnet com o servidor S. Quase ao mesmo tempo,
+o cliente B também inicia uma sessão Telnet com o servidor S. Forneça possíveis números de porta de origem e destino para:
+a. os segmentos enviados de A para S.
+A=32-para-s=23
+b. os segmentos enviados de B para S.
+B=20-para-S=23
+c. os segmentos enviados de S para A.
+S=30-para-A=23
+d. Os segmentos enviados de S para B.
+s=16-para-B=23
+e. Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos segmentos de
+A para S seja o mesmo que de B para S?
+sim.
