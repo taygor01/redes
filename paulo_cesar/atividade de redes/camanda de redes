@@ -1,0 +1,111 @@
+Aluno - Paulo cesar de jesus lima
+turma 421 subsequente
+
+
+                                              EXERCICIO DE REDES
+
+
+
+Assunto - Camada de redes
+
+
+
+1. Qual a camada que representa a camada de transporte no modelo TCP/IP?
+
+
+( ) Camada 1 ( ) Camada 2 ( ) Camada 3 ( X ) Camada 4 ( ) Camada 5 ( ) Camada 6 ( ) Camada 7
+
+
+2. Qual a PDU da camada de transporte? 
+
+
+( X ) Segmento ( )Pacote ( )Dados ( )Bits ( )Quadros
+
+
+3. Quais os principais protocolos da camada de transporte?
+
+
+( )ARP ( X )TCP ( )IP ( )DNS ( )UDP
+
+
+4. Marque as características que representam o protocolo TCP. 
+( X ) Orientado à conexão; 
+(   ) É um protocolo simples; 
+(   ) Entrega de dados com baixa sobrecarga; 
+(   ) Não orientado a conexão. 
+(   ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+( X ) Entrega de dados com sobrecarga adicional; 
+( X ) Entrega ordenada, confiável e realiza controle de fluxo 
+( X ) É utilizado em aplicações como navegadores web, E-mail e FTP
+
+
+5. Marque as características que representam o protocolo UDP. 
+
+ 
+(   ) Orientado à conexão;
+( X ) É um protocolo simples; 
+( X ) Entrega de dados com baixa sobrecarga; 
+( X ) Não orientado a conexão. 
+(   ) É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP); 
+(   ) Entrega de dados com sobrecarga adicional; 
+(   ) Entrega ordenada, confiável e realiza controle de fluxo 
+(   ) É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+
+6. Para que serve o número de portas na camada de transporte?
+
+
+R = Muita gente já ouviu dizer que instalar um firewall é uma boa maneira de proteger o PC, já que ele controla o uso das portas. Por outro lado, há pessoas que descobrem que é necessário liberar uma determinada porta em seu computador para que um dado programa funcione. Quando alguém fala dessas portas, está se referindo às portas TCP e UDP, que são meios utilizados por softwares e serviços do sistema operacional para a comunicação em rede e, conseqüentemente, na internet.
+    A comunicação pela internet é feita, basicamente, através de protocolos, sendo o TCP (Transmission Control Protocol) um dos mais importantes deles. Isso porque o TCP está incluído no conjunto de protocolos que formam o TCP/IP, a base de comunicação via dados de toda a internet. De acordo com a definição dada por Júlio Battisti neste artigo, as principais características do TCP são:
+    Garantir a entrega de datagramas IP: esta talvez seja a principal função do TCP, ou seja, garantir que os pacotes sejam entregues sem alterações, sem terem sido corrompidos e na ordem correta. O TCP tem uma série de mecanismos para garantir esta entrega;    
+    Executar a segmentação e o reagrupamento de grandes blocos de dados enviados pelos programas, garantir o seqüenciamento adequado e a entrega ordenada de dados segmentados: esta característica refere-se ao recurso de dividir grandes arquivos em pacotes de dados menores e transmitir cada pacote separadamente. Os pacotes podem ser enviados por caminhos diferentes e chegar fora de ordem. O TCP tem mecanismos para garantir que, no destino, os pacotes sejam ordenados corretamente, antes de serem entregues ao programa de destino.
+    Verificar a integridade dos dados transmitidos usando cálculos de soma de verificação,Enviar mensagens positivas dependendo do recebimento bem-sucedido dos dados. Ao usar confirmações seletivas, também são enviadas confirmações negativas para os dados que não foram recebidos,no destino,Oferecer um método preferencial de transporte de programas que devem usar transmissão confiável de dados baseada em sessões, como bancos de dados cliente/servidor e programas de correio eletrônico. 
+   
+
+7. O que são os sockets?
+
+
+R = O acesso aos serviços da camada de transporte pode ser feito por primitivas de transporte, essas primitivas são denominadas SOCKET. 
+    Por essas primitivas é possível acessar vários protocolos da camada de transporte, dentre eles TCP e UDP.
+    Sockets garantem a intercomunicação bidirecional entre processos, executados localmente ou em máquinas conectadas através de uma LAN/WAN.
+    Sockets criados usam endereços para  fazer referências entre si. O espaço de possíveis endereços é denominado domínio.
+
+
+8. Considere uma conexão TCP entre o computador A e o computador B. Suponha que os segmentos TCP que trafegam do computador A para o computador B tenham número de porta de origem X e número de porta destino Y. Quais são os números de porta de origem e destino para os segmentos que trafegam do computador B para o computador A?
+
+R =Quando os segmentos trafegarem do hospedeiro B para o hospedeiro A, o numero de porta fonte será a porta y e o numero de porta destino será a porta x. Isso ocorre porque em uma conexão TCP cliente-servidor ,na qual esta acontecendo uma comunicação entre as pontas. Quando ocorre uma requisição de A para B temos os quadros de portas descritos no inicio do enunciado, e quando ocorre a resposta de B para A esse quadro se altera, pois ao chegar no hospedeiro B o segmento TCP (uma tupla que contem 4 elementos: end. IP da fonte, n. porta de fonte, end. de destino e n. porta de destino), o protocolo usará todos os 4 valores para demultiplexar (direcionar para porta correta) o segmento para o sockets (portas pelas quais dados passam da rede para o processo e do processo para a rede ) apropriado, obtendo assim nesta situação como endereço de destino a porta x onde a informação deve ser entregue.
+
+
+9. Descreva por que um desenvolvedor de aplicação pode escolher rodar uma aplicação sobre UDP em vez de TCP.
+
+R =Um desenvolvedor de aplicação pode escolher rodar uma sua aplicação sobre UDP ao invés de TCP pelas seguintes razões;
+\u25cf Melhor controle no nível de aplicação sobre quais os dados são enviados e quando - processo de aplicação passa os dados, protocolo UDP encapsula e repassa para camada de redes, não se preocupando com congestionamento desta.
+\u25cf Não há estabelecimento de conexão - não há apresentação entre cliente-servidor, UDP envia a informação sem precisar de formalidade entre as entidades comunicantes.
+\u25cf Não há estado de conexão - não mantém estado de conexão, nem controle de congestionamento, o que possibilita um numero maior de clientes ativos ao mesmo servidor.
+\u25cf Pequenas sobrecarga de cabeçalho de pacotes - tem um cabeçalho de 8 bytes de sobrecarga.
+Um exemplo de aplicação que roda sobre UDP é o protocolo DNS (Domain Name System) que se beneficia da caraterista de não estabelecimento de conexão do protocolo para fazer suas consultas e evitando um possivel atraso de conexão que poderia acontecer se este rodasse em TCP.  
+
+
+10. Suponha que o cliente A inicie uma sessão Telnet com o servidor S. Quase ao mesmo tempo, o cliente B também inicia uma sessão Telnet com o servidor S. Forneça possíveis números de porta de origem e destino para:
+
+
+a. os segmentos enviados de A para S.
+
+R = 467 - 23
+
+b. os segmentos enviados de B para S.
+
+R = 513 - 23
+
+c. os segmentos enviados de S para A.
+
+R = 23 - 467
+
+d. Os segmentos enviados de S para B.
+
+R = 23 - 513
+
+e. Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos segmentos de A para S seja o mesmo que de B para S?
+
+R = sim
+
