@@ -1,0 +1,29 @@
+1 – Camada 4
+2 – Dados
+3 – TCP
+4 – 
+Orientado à conexão, 
+Entrega ordenada, confiável e realiza controle de fluxo, 
+Entrega de dados com sobrecarga adicional, 
+É utilizado em aplicações como navegadores web, E-mail e FTP.
+
+5 - 
+É um protocolo simples,
+Entrega de dados com baixa sobrecarga,
+Não orientado a conexão,
+É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP).
+
+6 - Utilizado pelo TCP e UDP como forma de endereçamento.
+Identifica aplicações e conversação.
+
+7-  Sockets são as portas, mais o endereço IP.
+
+8 – X e Y
+9 – Ele pode escolher utilizar o UDP por ser mais rápido e mais esforçado no envio dos dados.
+10  - 
+A -  Os segmentos enviados de A para S = 8 à 23
+B -  Os segmentos enviados de B para S = 12 à 23
+C - Os segmentos enviados de S para A = 23 à 8
+D -  Os segmentos enviados de S para B = 23 à 12
+E - Se A e B são hospedeiros diferentes, é possível que o número de porta de origem nos
+segmentos de A para S seja o mesmo que de B para S? R: Sim
