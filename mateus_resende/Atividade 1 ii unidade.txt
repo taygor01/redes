@@ -1,0 +1,41 @@
+1. questão
+Camada 4
+
+2.questão
+Dados
+
+3. questão
+TCP
+
+4. questão
+Orientado à conexão;
+Entrega ordenada, confiável e realiza controle de fluxo
+Entrega de dados com sobrecarga adicional;
+É utilizado em aplicações como navegadores web, E-mail e FTP
+
+5. questão
+É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP);
+Não orientado a conexão.
+Entrega de dados com baixa sobrecarga;
+É um protocolo simples;
+
+6. questão
+Utilizado pelo TCP e UDP como forma de
+endereçamento.
+Identifica aplicações e conversação.
+
+7. questão
+sockets - são as portas mais com o endereço de IP
+
+8. questão
+YX 
+
+9. questão
+Ele pode escolher utilizar UDP por ser mais rápida e mais esforçado, enquanto o TCP só é mais seguro.
+
+10. questão
+a. 10 - 23
+b. 15 - 23
+c. 23 - 10
+d. 23 - 15
+e. Sim
