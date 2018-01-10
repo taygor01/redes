@@ -1,0 +1,41 @@
+questao 1-
+camada 4
+
+questao 2-
+dados
+
+questao 3- 
+tcp
+
+questao 4-
+orientado a conexão, 
+Entrega ordenada,confiável e realiza controle de fluxo
+Entrega de dados com sobrecarga adicional
+É utilizado em aplicações como navegadores web, E-mail e FTP
+
+questao 5- 
+É um protocolo simples;
+Entrega de dados com baixa sobrecarga;
+Não orientado a conexão.
+É utilizado em aplicações como, DNS, Vídeo em Streaming e Voz Sobre IP (VOIP);
+
+questao 6-
+Utilizado pelo TCP e UDP como forma de endereçamento e identifica aplicações e conversação.
+
+questao 7-
+sockets são as portas, mais o endereço IP.
+
+questao 8-
+YX
+
+questao 9-
+Ele pode escolher utilizar UDP por ser mais rápido e mais esforçado, enquanto o TCP só é mais seguro.
+
+questao 10-
+a. os segmentos enviados de A para S = 10 - 23
+b. os segmentos enviados de B para S = 15 - 23
+c. os segmentos enviados de S para A = 23 - 10
+d. Os segmentos enviados de S para B = 23 - 15
+e. Sim
+
+
