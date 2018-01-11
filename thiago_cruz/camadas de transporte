@@ -1,0 +1,16 @@
+1)Chamada 4.
+
+    Pacote.
+
+3)TCP.
+
+4)Orientado a conexao.
+
+5)Nao orientado a conexao.
+
+6)A principal finalidade dessa camada é manter a comunicação entre dois hosts, ou seja, ela é responsável pela transferência fim-a-fim, de maneira eficiente, confiável e econômica de dados entre uma máquina de origem e uma máquina de destino. A camada de transporte prevê dois protocolos, o primeiro deles é o TCP (Transmission Control Protocol — protocolo de controle de transmissão), que é um protocolo orientado a conexões confiáveis, ou seja, ele permite a entrega sem erros de dados de uma determinada máquina a outra máquina da rede. O outro protocolo, o UDP (User Datagram Protocol - protocolo de datagramas do utilizador) corresponde a um protocolo não orientado a conexão, ou seja, sem confiabilidade, já que não há garantia de envio/recebimento de pacotes.
+
+    os sockets sao a forma de permitir que dois processos se comuniquem podendo ou não estar na mesma máquina.Nosso navegador web utiliza sockets pra requisitar páginas. Quando um sistema se integra com um banco de dados ele abre um socket.
+
+9)A grande vantagem do UDP em relação ao TCP está na velocidade de transmissão, relevando a confiabilidade na entrega dos pacotes. Nas aplicações onde velocidade é mais importante do que a ordem em que os pacotes são recebidos, como jogos, vídeos e músicas, o UDP é preferível.
+
