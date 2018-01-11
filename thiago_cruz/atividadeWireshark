@@ -1,0 +1,38 @@
+
+atividade de Wireshark
+
+1°) 
+a) 131.247.95.216
+
+b) Conversação do computador com o servidor
+
+c) Solicitação da pagena da web no 6 e 7 ele faz o envio da pagena web
+
+d) atualiza a janela para 6432 porque o servidor ou cliente não estava suportando o tamanho do segmento
+
+e) 9 reorganizar os segmentos e o 10 manda direto para o site
+
+f:	uma conversação entre o cliente e o servidor;
+g:	não há conversação por que o site ja esta salvo;
+h:	remonta o segmento e recebe confirmação de que o segmento foi enviado por completo;
+i:	
+
+2°
+a:	cname www.yahoo.akadns.net
+		ip1:	216.109.117.106
+		ip2:	216.109.117.109
+
+b:	win=17520
+c:	uma conversação entre o cliente e o servidor. Não, pode ser de outro servidor, desde que forneça o endereço correto com ip primario e de backup.
+d:	Porque ele esta requisitando outro site, não sendo o mesmo do pacote 26.
+e:	Mesmo sendo de outro caminho HTTP, o host é o mesmo
+f:	Não, são pacotes diferentes. os pacotes sao remontados até o ultimo dado do pacote ser enviado e o servidor ou cliente confirmar o recebimento
+
+3°	
+a:	O servidores requisitados são difentes, um contem o protocolo normal HTTP, o outro o protocolo HTTPS.
+
+b:	O cliente esta solicitando ao servidor e o servidor responde ao cliente de modo encriptografada que o site é seguro.
+
+
+
+
