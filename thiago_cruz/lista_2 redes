@@ -2,10 +2,10 @@ Lista 2 redes
 
 Thiago Cruz
 
-1 – A
-2-  C
-3-  E
-15-  D
-16-  A e C
-17- C
+1 – A- 131.1.123.30
+2-  C- 1024
+3-  E- 192.168.5.14
+15- D- serverA e seu gateway não estão na mesma subrede
+16- A- 192.168.20.29 e C 192.168.20.17
+17- C- 172.16.28.0 
 
