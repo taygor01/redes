@@ -1,0 +1,91 @@
+atividade de mininet-wifi
+
+questão 1.1
+ 
+O artigo Mininet-WiFi: Emulating Software-Defined Wireless Networks, pois segundo o site www.scholar.google.com.br é o mais citado 
+
+dentre os demais encontrados (44 citações).
+
+questão 2.1
+
+tempo de resposta medio 0.237 ms, não houve nenhuma perda de pacotes, a transmissão se manteve estável.
+
+questão 2.2
+
+A banda disponivel do sta2: 10.6 foi superior a do sta1: 10.5
+
+questão 2.3
+1° parametro sudo mn --wifi --possition --wmediumd
+	definiu uma posição para o simulador
+2° parametro mininet-wifi>py sta1 params
+	define parametros para o simulador, com informações especificas;
+3° parametro mininet-wifi>py sta1.params
+(position)
+4º parametro mininet-wifi>py sta1.setPosition
+	(10.0.0.1)
+5° parametro mininet-wifi> distance sta1 sta2;
+	identificando a distance entre sta1 e sta2
+
+
+questão 3.1
+
+sta3, pois está fora de alcance da rede
+não esta associado ao sta2
+
+3.2
+
+Foi o utilizado o modelo de propagação International Telecommunication Union (ITU) Propagation Loss Model, c. A distância do ap1 até sta1 é de 5m. Com os parametros lF=0 , nFloors=0 , pL=0 obtivemos signal level de -41dBm. 
+
+lF = 1, nFloors = 1, pL = 1, obtivemos -23dBm.
+
+lF = 2, nFloors = 2, pL = 1, obtivemos -26dBm.
+
+lF = 2, nFloors = 2, pL = 2, obtivemos -27dBm.
+
+lF=5, nFloors=5, pL=5 o sinal ficou em -50 dBm. 
+
+
+lF=5, nFloors=1, pL=5 o sinal ficou em -30 dBm.
+
+lF=10, nFloors=1, pL=10 o sinal ficou em -39 dBm. Apesar destes valores a qualidade do link alcançou o máximo(70/70).
+
+lF=10, nFloors=4, pL=10 o sinal ficou em -69 dBm. Link Quality=41/70.
+
+
+Quanto mais pavimentos ou ambientes (tradução correta?) teremos queda no sinal, e caso o aumento do nFloors seja acompanhado pelos outros parâmetros a queda será mais acentuada, acompanhado de diminuição na qualidade do link. 
+
+
+Conclui-se que à medida que são aumentados, simultaneamente, os valores de IF, nFloors e pL, o nível de sinal diminui, exceto para todos os parâmetros valorados em zero. Caso nFloors seja menor do que os demais parametros a redução do sinal será mais lenta.
+
+Questão 3.3
+
+Utilizando os parâmetros adequados pode ser utilizado em qualquer ambiente: Casa, escritório, apartamentos.
+
+Por exemplo: Supondo que os parâmetros para o ambiente de uma casa sejam lF = 1, nFloors = 1, pL = 1 o nível de sinal de -23dBm é excelente.
+
+Questão 4.1
+
+uando o arquivo "propagation_model.py" foi carregado, não foi possível executar o comando "iperf sta1 sta2", retornando o seguinte erro: Exception: Could not connect to iperf on port 5001.
+
+Questão 4.2
+
+Avaliação de limite do canal disponível(tradução correta?)
+
+É utilizado pela camada MAC para determinar se o canal está disponível para transmissão de dados, e quando há dados a serem recebidos.
+
+Questão 5.1
+
+Teoricamente deveriam manter a comunicação pois sta2 permaneceu na área de abrangência dos dois ap's e sta1 entrou na área do ap2. Consegui observar isso executando ping entre sta2 e ap1/ap2, e sta1 e ap2. Entre ap1 e sta1 não há comunicação. Todavia o comando sta1 ping sta2 retornou "Destination Host Unreachable" quando sta1 ultrapassa o limite de alcance de ap1. De acordo com o manual do mininet wifi deveria haver comunicação durante todo o percurso de sta1, porém não foi o que houve. Segue o trecho do manual que apresenta esse modelo de mobilidade: "handover.py shows how to create a simple mobility scenario where a station moves past two access points, causing the station to hand off from one to the other. multipleWlan.py shows how to create a station with more than one wireless LAN interface. propagationModel.py shows how to use propagation models that impact how stations and access points can communicate with each other over distance. authentication.py shows how to set up WiFi encryption and passwords on access points and stations."
+
+Desse modo penso que deve ter havido algum erro no script ou na minha máquina.
+
+Questão 5.2
+
+[13:32, 23/1/2018] +55 73 9850-8001: Nada mais é do que o processo de mobilidade, que é uma situação em que uma estação passa por dois pontos de acesso, fazendo com que a estação seja distribuída de um acess point para outro.
+
+
+Questão 6.1: O que ocorre quando sta1 tenta se comunicar com sta3? E sta4 com sta6? Comente e justifique o comportamento.
+
+
+R: Utilizando o comando sta1 ping sta3 não houve comunicação entre os nós, o mesmo acontece quando foi digitado sta4 ping sta6. 
+ (Algum erro de script)
