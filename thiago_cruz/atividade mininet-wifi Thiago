@@ -80,8 +80,7 @@ Teoricamente deveriam manter a comunicação pois sta2 permaneceu na área de ab
 Desse modo penso que deve ter havido algum erro no script ou na minha máquina.
 
 Questão 5.2
-
-[13:32, 23/1/2018] +55 73 9850-8001: Nada mais é do que o processo de mobilidade, que é uma situação em que uma estação passa por dois pontos de acesso, fazendo com que a estação seja distribuída de um acess point para outro.
+Nada mais é do que o processo de mobilidade, que é uma situação em que uma estação passa por dois pontos de acesso, fazendo com que a estação seja distribuída de um acess point para outro.
 
 
 Questão 6.1: O que ocorre quando sta1 tenta se comunicar com sta3? E sta4 com sta6? Comente e justifique o comportamento.
@@ -89,3 +88,5 @@ Questão 6.1: O que ocorre quando sta1 tenta se comunicar com sta3? E sta4 com s
 
 R: Utilizando o comando sta1 ping sta3 não houve comunicação entre os nós, o mesmo acontece quando foi digitado sta4 ping sta6. 
  (Algum erro de script)
+ 
+ 
