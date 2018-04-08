@@ -1,4 +1,6 @@
-1) /home/IgorNery 
+1) ls
+/home/IgorNery 
+
 
 2) mkdir my_test 
    cd my_test
