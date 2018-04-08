@@ -1,0 +1,51 @@
+1-Questão
+ comando pwd
+diretorio: home/ThiagoCruz
+
+2- Questão
+   mkdir my_test
+   cd my_test
+   mkdir my_work
+   cd ..
+   mkdir job1
+   cd job1
+   mkdir task1
+3- Questão
+    cd ../..
+    cd my_work
+4- Questão 
+   nano Ctrl O para salvar arquivo
+5- Questão
+   cp numbers.txt numbers1.txt 
+   cp numbers.txt numbers2.txt
+
+6- Questão
+cp numbers.txt numbers1.txt numbers2.txt ../my_test/job1/
+task1
+
+7- Questão
+   ls -la
+8- Questão
+   chmod 775 numbers.txt
+9 - Questão
+   chmod 644 numbers1.txt
+10 - Questão
+   cp task1 ../job1/my_test/~ 
+11 - Questão
+   mv my_work my_work1
+12 - Questão
+   rm -r task1
+13 - Questão
+ls -la /bin > listabin.txt
+14 - Questão
+   clear
+15 - Questão
+1. top
+16) - Questão
+nano script.sh
+#!/bin/sh
+#_BEGIN_MAIN_
+echo Nome: Thiago, Sobrenome: Cruz , Sexo: Masculino, Idade: 30, Grau de instruçao 3º.
+#_END_MAIN_
+Sair
+sh script.sh        
