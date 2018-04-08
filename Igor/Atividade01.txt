@@ -1,4 +1,4 @@
-1) ls
+1) pwd
 /home/IgorNery 
 
 
