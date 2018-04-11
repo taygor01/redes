@@ -1,0 +1,81 @@
+1) pwd
+/home/IgorNery 
+
+
+2) mkdir my_test 
+   cd my_test
+   cd mkdir my_work
+   mkdir job1
+   cd job1
+   mkdir task1	
+
+3) cd ..
+   cd ..
+   cd my_work
+
+4) comando "nano" 
+
+5) cp numbers.txt numbers1.txt
+
+   
+cp numbers.txt numbers2.txt    
+
+6)  cp numbers.txt ../job1/task1
+
+
+    cp numbers1.txt ../job1/task1
+
+    
+cp numbers2.txt ../job1/task1
+
+7)  cd my_test
+
+
+    cd job1
+
+
+    cd task1
+
+ls -la  
+
+8)  chmod 755 numbers.txt
+
+9) chmod 644 numbers1.txt
+
+10)  cp task1 ../job1/my_test/~ 
+     cp: omitindo o diretório "task1"
+
+11) mv my_work my_work1
+
+
+12)  rm -r task1
+
+13)  ls -la /bin > listabin.txt
+
+14)  clear
+
+
+15)  top
+
+
+16)  nano script.sh
+
+
+#!/bin/sh
+
+
+#_BEGIN_MAIN_
+
+
+
+echo Nome: Igor, Sobrenome: Nery, Sexo: Masculino, Idade: 21, Grau de instruçao 3º.
+
+
+#_END_MAIN_
+
+
+
+Sair
+
+
+sh script.sh                                                                                                                                                                                                                                                                                                                                                    
