@@ -1,0 +1,42 @@
+aluno sergio de almeida paraiso
+
+1-
+R= /home/serjop
+2-
+R=  a - mkdir my_teste e depois cd teste  digitar mkdir my_work.
+R=  b- digitar mkdir job1.
+R=  c- entrar no diretorio job1 e digitar mkdir task.
+3-
+R= mkdir my work
+4-
+R= touch numbers.txt, nano numbers.txt, e digitar o conteudo.
+5-
+R= touch numbers1.txt, touch numbers2.txt,depois de ter criado os arquivos copiar .
+o conteudo co o camando cp, cp numbres.txt numbers1.txt, cp nembers1.txt numbers2.txt.
+6-
+R= eu criei os arqivos no diretorio principal e digitei cp *.txt ./teste/job1/task1.
+7-
+R= entra na pasta task1 e digita ls - la.
+8-
+R= dentro de task1 digita o comando  chmod 755 numbers.txt.
+9-
+R= dentro de task1 digita o comando  chmod 644 numbers1.txt.
+10-
+R= digitei esse comando cp -r ./teste/job1/task1 ./
+11-
+R= dentro dp diretorio teste utilizei esse commando mv my_work my_work1 .
+12-
+R= no diretorio job1 fazer o comando rm -r task1.
+13-
+R=  digita esse comando ls -la /bin > listabin.txt
+14-
+R= digita o comano clear
+15-
+R=o comando top
+16-
+R= +#!/bin/sh
+#__BEGIN_MAIN__
+echo Nome: sergio, Sobrenome: paraiso, Sexo: Masculino, Idade: 28, Grau de instruçao 2º.
+#__END_MAIN__
+Sair
+sh script.sh
