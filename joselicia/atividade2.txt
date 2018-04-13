@@ -1,0 +1,22 @@
+Respostas da atividade 2
+1) cd mininet-wifi
+   sudo mn
+   i)mininet-wifi>nodes
+   ii) mininet-wifi>sh ovs-vsctl show
+   iii)mininet-wifi>sh ovs-ofctl dump-flows s1
+2)
+    i)mininet-wifi>h1 ping -c1 h2
+    ii)mininet-wifi>sh ovs-ofctl dump-flows s1
+3) 
+    i) mininet-wifi>sh ovs-ofctl dump-flows s1
+    ii) mininet-wifi>sh ovs-ofctl del-flows s1
+    iii)mininet-wifi> sh ovs-ofctl add-flow s1 in_port=1,actions=output:2
+
+    iv) mininet-wifi>sh ovs-ofctl dump-flows s1
+    v) mininet-wifi>h1 ping -c1 h2
+    vi) mininet-wifi>sh ovs-ofctl del-flows s1
+    vii) mininet-wifi> sh ovs-ofctl add-flow s1 in_port=1,actions=drop
+    viii) exit
+
+
+
