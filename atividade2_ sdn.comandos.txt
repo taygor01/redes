@@ -1,0 +1,5 @@
+NOME: MARCOS BISPO
+
+QUESTÃO 03 
+vii) crie uma regra de forma que h1 não consiga se comunicar com h2.
+RESPOSTA: sh ovs-ofctl add-flow s1 priority=1,actions=drop
