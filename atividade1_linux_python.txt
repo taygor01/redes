@@ -1,0 +1,16 @@
+Nome: Marcos bispo
+FORMULÁRIO
+QUESTÃO 16
+RESPOSTA:
+
+
+print('                      Formulário')
+
+
+
+nome=input('Nome: ')
+x=input('Sobrenome: ')
+a=input('Sexo: ')
+b=input('Idade: ')
+c=input('Grau de Instrução: ')
+p=input('Resumo:')
